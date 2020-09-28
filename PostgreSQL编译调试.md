@@ -1,3 +1,4 @@
+---
 编译构建：
 
 
@@ -181,3 +182,4 @@ at latch.c:1000
 #13 0x00000000006d2477 in main (argc=3, argv=0x2753930) at main.c:228
 (gdb) c
 Continuing.
+---
