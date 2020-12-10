@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-10T08:06:19.448Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15" etag="UdFzKbGkkXEPN0Kw7pwm" version="14.0.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-12-10T08:15:30.217Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15" etag="6lsrnJLPwepHw3CTbDP3" version="14.0.0" type="github" pages="2">
   <diagram id="KfRbmlJhNQrDs0zASMoi" name="Page-1">
     <mxGraphModel dx="813" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -128,12 +128,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="0ew7K8OALgndSax3VEwL" name="Page-2">
-    <mxGraphModel dx="1340" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1914" dy="1203" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="38ilZqPQgHj2GvMJCnaG-0" />
         <mxCell id="38ilZqPQgHj2GvMJCnaG-1" parent="38ilZqPQgHj2GvMJCnaG-0" />
         <mxCell id="38ilZqPQgHj2GvMJCnaG-68" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
-          <mxGeometry x="450" y="610" width="250" height="320" as="geometry" />
+          <mxGeometry x="450" y="610" width="370" height="320" as="geometry" />
         </mxCell>
         <mxCell id="38ilZqPQgHj2GvMJCnaG-69" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
           <mxGeometry x="460" y="640" width="90" height="90" as="geometry" />
@@ -147,7 +147,7 @@
         <mxCell id="38ilZqPQgHj2GvMJCnaG-72" value="operator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
           <mxGeometry x="580" y="640" width="90" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="38ilZqPQgHj2GvMJCnaG-73" value="服务K8S-1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
+        <mxCell id="38ilZqPQgHj2GvMJCnaG-73" value="服务K8S-2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
           <mxGeometry x="470" y="900" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="38ilZqPQgHj2GvMJCnaG-74" value="MySQL" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
@@ -207,7 +207,7 @@
         <mxCell id="38ilZqPQgHj2GvMJCnaG-4" value="OpenAPI&lt;br&gt;java/go" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
           <mxGeometry x="320" y="270" width="70" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="38ilZqPQgHj2GvMJCnaG-5" value="Controller" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
+        <mxCell id="38ilZqPQgHj2GvMJCnaG-5" value="业务Controller" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
           <mxGeometry x="320" y="330" width="70" height="40" as="geometry" />
         </mxCell>
         <mxCell id="38ilZqPQgHj2GvMJCnaG-6" value="Jvessel2&lt;br&gt;API" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
@@ -220,7 +220,7 @@
           <mxGeometry x="130" y="690" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="38ilZqPQgHj2GvMJCnaG-18" value="Meta&lt;br&gt;DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
-          <mxGeometry x="210" y="270" width="60" height="70" as="geometry" />
+          <mxGeometry x="210" y="277.5" width="60" height="70" as="geometry" />
         </mxCell>
         <mxCell id="38ilZqPQgHj2GvMJCnaG-19" value="UC" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
           <mxGeometry x="520" y="220" width="50" height="30" as="geometry" />
@@ -294,10 +294,20 @@
             <mxPoint x="410" y="450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="38ilZqPQgHj2GvMJCnaG-87" value="业务api封装" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="38ilZqPQgHj2GvMJCnaG-44">
+          <mxGeometry x="-0.1751" y="1" relative="1" as="geometry">
+            <mxPoint x="-7.07" y="-6.68" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="38ilZqPQgHj2GvMJCnaG-45" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="38ilZqPQgHj2GvMJCnaG-1" source="38ilZqPQgHj2GvMJCnaG-36">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="360" y="500" as="sourcePoint" />
             <mxPoint x="300" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38ilZqPQgHj2GvMJCnaG-86" value="类似helm" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="38ilZqPQgHj2GvMJCnaG-45">
+          <mxGeometry x="-0.4006" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="38ilZqPQgHj2GvMJCnaG-48" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="38ilZqPQgHj2GvMJCnaG-1" source="38ilZqPQgHj2GvMJCnaG-71" target="38ilZqPQgHj2GvMJCnaG-9">
@@ -308,7 +318,7 @@
         </mxCell>
         <mxCell id="38ilZqPQgHj2GvMJCnaG-51" value="可信链路" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="38ilZqPQgHj2GvMJCnaG-48">
           <mxGeometry x="-0.0991" y="-1" relative="1" as="geometry">
-            <mxPoint x="-43.36" y="-39.2" as="offset" />
+            <mxPoint x="-13.36" y="0.7999999999999972" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="38ilZqPQgHj2GvMJCnaG-49" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="38ilZqPQgHj2GvMJCnaG-1" target="38ilZqPQgHj2GvMJCnaG-68">
@@ -319,7 +329,7 @@
         </mxCell>
         <mxCell id="38ilZqPQgHj2GvMJCnaG-50" value="可信链路" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="38ilZqPQgHj2GvMJCnaG-49">
           <mxGeometry x="0.063" y="4" relative="1" as="geometry">
-            <mxPoint x="-18.09" y="-11.53" as="offset" />
+            <mxPoint x="41.91" y="28.47" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="38ilZqPQgHj2GvMJCnaG-53" value="管理K8S" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
@@ -370,9 +380,30 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="38ilZqPQgHj2GvMJCnaG-84" value="事件通知" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="38ilZqPQgHj2GvMJCnaG-83">
+        <mxCell id="38ilZqPQgHj2GvMJCnaG-84" value="事件通知机制待定" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="38ilZqPQgHj2GvMJCnaG-83">
           <mxGeometry x="0.068" y="1" relative="1" as="geometry">
             <mxPoint x="-6.29" y="33.62" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38ilZqPQgHj2GvMJCnaG-88" value="&lt;h1&gt;Note：&lt;/h1&gt;&lt;p&gt;1，TPaaS OpenAPI可以提供Jvessel2.0兼容的接口功能(helm封装)；&lt;/p&gt;&lt;p&gt;2，对应pg自带的apiserver，TPaaSOpenAPI 可以实现http代理功能，需要暴露server:port&lt;/p&gt;&lt;p&gt;3，管理K8S与业务K8S交互收敛到经过认证的链路；&lt;/p&gt;&lt;p&gt;4，业务的Controller部署在管理K8S，支持多云；&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
+          <mxGeometry x="115" y="960" width="625" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="38ilZqPQgHj2GvMJCnaG-89" value="operator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
+          <mxGeometry x="710" y="640" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="38ilZqPQgHj2GvMJCnaG-90" value="ClickHouse" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
+          <mxGeometry x="700" y="810" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="38ilZqPQgHj2GvMJCnaG-91" value="ClickHouse" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
+          <mxGeometry x="710" y="820" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="38ilZqPQgHj2GvMJCnaG-92" value="ClickHouse" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="38ilZqPQgHj2GvMJCnaG-1">
+          <mxGeometry x="720" y="830" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="38ilZqPQgHj2GvMJCnaG-93" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="38ilZqPQgHj2GvMJCnaG-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="754.41" y="810" as="sourcePoint" />
+            <mxPoint x="754.41" y="730" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
