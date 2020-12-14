@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-14T08:00:00.693Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15" etag="fpnyJ9DXSFg0rzu_u4RN" version="14.0.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-12-14T10:49:53.220Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15" etag="gsz5W8n6MD4Q1LUFdV9r" version="14.0.0" type="github" pages="4">
   <diagram id="KfRbmlJhNQrDs0zASMoi" name="TPaaS控制面概览图">
     <mxGraphModel dx="1914" dy="1203" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -901,8 +901,8 @@
             <mxPoint x="1710" y="620" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="H95YvJ-rvGcUVPv8dTr4-0" value="&lt;h1&gt;RDS OpenAPI中间层Golang版本改造&lt;/h1&gt;&lt;p&gt;1，目前RDS三条产品线的中间层如下图左，Relay层：分发，列表聚合；&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;" vertex="1" parent="bbYs1Sa46FpcIdEaZqm--1">
-          <mxGeometry x="230" y="140" width="590" height="120" as="geometry" />
+        <mxCell id="H95YvJ-rvGcUVPv8dTr4-0" value="&lt;h1&gt;RDS OpenAPI中间层&lt;/h1&gt;&lt;p&gt;1，目前RDS三条产品线的中间层如下图左，Relay层：分发，列表聚合；zk用于触发数据库变更刷新，可以通过linux signal替换，MetaDB里面记录了转发规则属于配置类，可以通过配置文件 or sqlite3替换；&lt;/p&gt;&lt;p&gt;2，Controller层ZK用于任务分发抢锁，多个Controller会抢锁来处理异步polling任务，如果polling失败或者，会重新发起抢锁，抢到的Controller会继续Polling，异步任务是弱状态的；&lt;/p&gt;&lt;p&gt;3，MySQL，SQLServer，PostgreSQL的元数据库差异比较小，差异化部分如Flavor等；&lt;/p&gt;&lt;p&gt;4，三个项目合成一个RDS项目，需要有聚合的地方，Relay是否需要保留？&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;" vertex="1" parent="bbYs1Sa46FpcIdEaZqm--1">
+          <mxGeometry x="230" y="140" width="1490" height="270" as="geometry" />
         </mxCell>
         <mxCell id="WPdMDejoElb_CqnuWKEO-1" value="zk" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="bbYs1Sa46FpcIdEaZqm--1">
           <mxGeometry x="900" y="623.5" width="40" height="35" as="geometry" />
@@ -921,6 +921,9 @@
             <mxPoint x="1280" y="870" as="sourcePoint" />
             <mxPoint x="1330" y="820" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="WPdMDejoElb_CqnuWKEO-6" value="&lt;h1&gt;Golang新版本中间层&lt;/h1&gt;&lt;p&gt;1，为了实现J-One的目标，TPaaS内部署的CAP应该与公有云上的一致，而不是不同的两份；目前面对前端保持了OpenAPI的一致性，但是底层有公有云的taskmanager，有tpaas的Oprator，也有公有云的Jvessel2.0里面的Operator，如果PostgreSQL和MySQL还是按照公有云的分类方式，意味着taskmanger会有多种；&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;" vertex="1" parent="bbYs1Sa46FpcIdEaZqm--1">
+          <mxGeometry x="1760" y="130" width="710" height="310" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
