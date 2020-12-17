@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-17T02:58:10.499Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="p-cmPGLxaowB9HI_HvbK" version="14.0.3" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-12-17T03:32:55.283Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="grMO7AOkhm1KeEv6LWhb" version="14.0.3" type="github" pages="4">
   <diagram id="KfRbmlJhNQrDs0zASMoi" name="TPaaS控制面概览图">
     <mxGraphModel dx="1232" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -3058,6 +3058,107 @@
           <mxGeometry x="-0.4142" y="-1" relative="1" as="geometry">
             <mxPoint x="35.71" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-2" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3400" y="-650" as="sourcePoint" />
+            <mxPoint x="3400" y="-980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-3" value="" style="endArrow=classic;html=1;strokeColor=#FF0080;fontColor=#000000;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3400" y="-950" as="sourcePoint" />
+            <mxPoint x="3400" y="-930" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3420" y="-950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-4" value="检查appCode" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;fontSize=3;" vertex="1" connectable="0" parent="CkouAbwNzhayC9TQPL8N-3">
+          <mxGeometry x="-0.4142" y="-1" relative="1" as="geometry">
+            <mxPoint x="45.71" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-5" value="Kafka异步消息处理-订单" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry x="3330" y="-1000" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-6" value="" style="endArrow=classic;html=1;strokeColor=#FF0080;fontColor=#000000;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3400" y="-900" as="sourcePoint" />
+            <mxPoint x="3400" y="-880" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3420" y="-900" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-7" value="检查serviceCode" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;fontSize=3;" vertex="1" connectable="0" parent="CkouAbwNzhayC9TQPL8N-6">
+          <mxGeometry x="-0.4142" y="-1" relative="1" as="geometry">
+            <mxPoint x="55.71" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-8" value="" style="endArrow=classic;html=1;strokeColor=#FF0080;fontColor=#000000;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3400" y="-860" as="sourcePoint" />
+            <mxPoint x="3400" y="-840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3420" y="-860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-9" value="检查环境" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;fontSize=3;" vertex="1" connectable="0" parent="CkouAbwNzhayC9TQPL8N-8">
+          <mxGeometry x="-0.4142" y="-1" relative="1" as="geometry">
+            <mxPoint x="35.71" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-10" value="" style="endArrow=classic;html=1;strokeColor=#FF0080;fontColor=#000000;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3400" y="-820" as="sourcePoint" />
+            <mxPoint x="3400" y="-800" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3420" y="-820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-11" value="订单信息入库" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;fontSize=3;" vertex="1" connectable="0" parent="CkouAbwNzhayC9TQPL8N-10">
+          <mxGeometry x="-0.4142" y="-1" relative="1" as="geometry">
+            <mxPoint x="45.71" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-12" value="" style="endArrow=classic;html=1;strokeColor=#FF0080;fontColor=#000000;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3400" y="-780" as="sourcePoint" />
+            <mxPoint x="3400" y="-760" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3420" y="-780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-14" value="调用内部API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry x="3420" y="-790" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-15" value="" style="endArrow=classic;html=1;strokeColor=#FF0080;fontColor=#000000;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3400" y="-740" as="sourcePoint" />
+            <mxPoint x="3400" y="-720" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3420" y="-740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-16" value="polling实例状态" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry x="3420" y="-750" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-17" value="" style="endArrow=classic;html=1;strokeColor=#FF0080;fontColor=#000000;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3400" y="-700" as="sourcePoint" />
+            <mxPoint x="3400" y="-680" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3420" y="-700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CkouAbwNzhayC9TQPL8N-18" value="向kafka发送结果消息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry x="3420" y="-710" width="130" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
