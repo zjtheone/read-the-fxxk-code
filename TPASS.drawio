@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-17T12:07:51.854Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="tWeCkS1jGNd0iwoMT4tH" version="14.0.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2020-12-18T10:39:17.220Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15" etag="s8dDLoqqo4rf1E1QftNR" version="14.0.4" type="github" pages="5">
   <diagram id="KfRbmlJhNQrDs0zASMoi" name="TPaaS控制面概览图">
-    <mxGraphModel dx="1415" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1179" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -388,10 +388,16 @@
     </mxGraphModel>
   </diagram>
   <diagram id="YilMSOFX8JgyZHh62SNx" name="中间层Go版本规划">
-    <mxGraphModel dx="4074" dy="2197" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1179" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="bbYs1Sa46FpcIdEaZqm--0" />
         <mxCell id="bbYs1Sa46FpcIdEaZqm--1" parent="bbYs1Sa46FpcIdEaZqm--0" />
+        <mxCell id="GTgLfEmu2joLIzxJAOdc-0" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="bbYs1Sa46FpcIdEaZqm--1" vertex="1">
+          <mxGeometry x="1760" y="490" width="380" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="FxgIzJkgVex-LDWFzL_b-2" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bbYs1Sa46FpcIdEaZqm--1">
+          <mxGeometry x="1870" y="600" width="90" height="120" as="geometry" />
+        </mxCell>
         <mxCell id="GTgLfEmu2joLIzxJAOdc-88" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="bbYs1Sa46FpcIdEaZqm--1" vertex="1">
           <mxGeometry x="230" y="506" width="1260" height="510" as="geometry" />
         </mxCell>
@@ -413,9 +419,6 @@
             <mxPoint x="890" y="616" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GTgLfEmu2joLIzxJAOdc-0" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="bbYs1Sa46FpcIdEaZqm--1" vertex="1">
-          <mxGeometry x="1760" y="490" width="380" height="320" as="geometry" />
-        </mxCell>
         <mxCell id="GTgLfEmu2joLIzxJAOdc-1" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="bbYs1Sa46FpcIdEaZqm--1" target="GTgLfEmu2joLIzxJAOdc-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1915" y="440" as="sourcePoint" />
@@ -428,8 +431,8 @@
         <mxCell id="GTgLfEmu2joLIzxJAOdc-3" value="UI" style="rounded=1;whiteSpace=wrap;html=1;" parent="bbYs1Sa46FpcIdEaZqm--1" vertex="1">
           <mxGeometry x="1880" y="500" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="GTgLfEmu2joLIzxJAOdc-4" value="OpenAPI&lt;br&gt;java/go" style="rounded=1;whiteSpace=wrap;html=1;" parent="bbYs1Sa46FpcIdEaZqm--1" vertex="1">
-          <mxGeometry x="1880" y="610" width="70" height="40" as="geometry" />
+        <mxCell id="GTgLfEmu2joLIzxJAOdc-4" value="OpenAPI&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="bbYs1Sa46FpcIdEaZqm--1" vertex="1">
+          <mxGeometry x="1897" y="622.5" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="GTgLfEmu2joLIzxJAOdc-5" value="业务Controller" style="rounded=1;whiteSpace=wrap;html=1;" parent="bbYs1Sa46FpcIdEaZqm--1" vertex="1">
           <mxGeometry x="1880" y="670" width="70" height="40" as="geometry" />
@@ -465,12 +468,6 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1970" y="710" as="sourcePoint" />
             <mxPoint x="2020" y="660" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="GTgLfEmu2joLIzxJAOdc-15" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="bbYs1Sa46FpcIdEaZqm--1" target="GTgLfEmu2joLIzxJAOdc-4" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1830" y="655" as="sourcePoint" />
-            <mxPoint x="1880" y="605" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="GTgLfEmu2joLIzxJAOdc-16" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="bbYs1Sa46FpcIdEaZqm--1" target="GTgLfEmu2joLIzxJAOdc-5" edge="1">
@@ -924,6 +921,18 @@
         </mxCell>
         <mxCell id="WPdMDejoElb_CqnuWKEO-6" value="&lt;h1&gt;Golang新版本中间层&lt;/h1&gt;&lt;p&gt;1，为了实现J-One的目标，TPaaS内部署的CAP应该与公有云上的一致，而不是不同的两份；目前面对前端保持了OpenAPI的一致性，但是底层有公有云的taskmanager，有tpaas的Oprator，也有公有云的Jvessel2.0里面的Operator，如果PostgreSQL和MySQL还是按照公有云的分类方式，意味着taskmanger会有多种；&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;" parent="bbYs1Sa46FpcIdEaZqm--1" vertex="1">
           <mxGeometry x="1760" y="130" width="710" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="FxgIzJkgVex-LDWFzL_b-0" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bbYs1Sa46FpcIdEaZqm--1">
+          <mxGeometry x="540" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FxgIzJkgVex-LDWFzL_b-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bbYs1Sa46FpcIdEaZqm--1">
+          <mxGeometry x="540" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FxgIzJkgVex-LDWFzL_b-6" value="" style="endArrow=classic;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF3333;" edge="1" parent="bbYs1Sa46FpcIdEaZqm--1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1889" y="581" as="sourcePoint" />
+            <mxPoint x="1888.5" y="670" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
