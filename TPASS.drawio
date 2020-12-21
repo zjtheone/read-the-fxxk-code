@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-21T10:10:46.985Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="rhe8ImF7mq-rjft_NsKh" version="14.0.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2020-12-21T10:13:14.985Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="VRgBkUToq2va3-Mi1fog" version="14.0.3" type="github" pages="5">
   <diagram id="KfRbmlJhNQrDs0zASMoi" name="TPaaS控制面概览图">
     <mxGraphModel dx="1524" dy="972" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -388,7 +388,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="YilMSOFX8JgyZHh62SNx" name="中间层Go版本规划">
-    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" page="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1808" dy="947" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="bbYs1Sa46FpcIdEaZqm--0" />
         <mxCell id="bbYs1Sa46FpcIdEaZqm--1" parent="bbYs1Sa46FpcIdEaZqm--0" />
@@ -919,7 +919,7 @@
             <mxPoint x="1330" y="820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WPdMDejoElb_CqnuWKEO-6" value="&lt;h1&gt;Golang新版本中间层&lt;/h1&gt;&lt;p&gt;1，为了实现J-One的目标，TPaaS内部署的CAP应该与公有云上的一致，而不是不同的两份；目前面对前端保持了OpenAPI的一致性，但是底层有公有云的taskmanager，有tpaas的Oprator，也有公有云的Jvessel2.0里面的Operator，如果PostgreSQL和MySQL还是按照公有云的分类方式，意味着taskmanger会有多种；&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;" parent="bbYs1Sa46FpcIdEaZqm--1" vertex="1">
+        <mxCell id="WPdMDejoElb_CqnuWKEO-6" value="&lt;h1&gt;Golang新版本中间层&lt;/h1&gt;&lt;p&gt;1，为了实现J-One的目标，TPaaS内部署的CAP应该与公有云上的一致，而不是不同的两份；目前面对前端保持了OpenAPI的一致性，但是底层有公有云的taskmanager，有tpaas的Oprator，也有公有云的Jvessel2.0里面的Operator，如果PostgreSQL和MySQL还是按照公有云的分类方式，意味着taskmanger会有多种；&lt;/p&gt;&lt;p&gt;2，业务Controller提供OpenAPI服务，把tidb/ck的 两侧合并成一层；前提条件 tidb/ck taskmanager提供OpenAPI定义的接口；&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;" parent="bbYs1Sa46FpcIdEaZqm--1" vertex="1">
           <mxGeometry x="1760" y="130" width="710" height="310" as="geometry" />
         </mxCell>
         <mxCell id="FxgIzJkgVex-LDWFzL_b-0" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bbYs1Sa46FpcIdEaZqm--1">
@@ -3838,7 +3838,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="wA4-6QsEU0BCjYs0P3Rq" name="中间层库表">
-    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" page="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1085" dy="568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="lp4-pGZKvh6tN3wweS3x-0" />
         <mxCell id="lp4-pGZKvh6tN3wweS3x-1" parent="lp4-pGZKvh6tN3wweS3x-0" />
