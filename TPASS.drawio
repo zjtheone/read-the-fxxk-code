@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-21T10:20:09.623Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="n2PMGWKatWN5xJfp7CkM" version="14.0.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2020-12-21T10:21:15.547Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="xJsR4Qk0esfyD-iZFUtq" version="14.0.3" type="github" pages="5">
   <diagram id="KfRbmlJhNQrDs0zASMoi" name="TPaaS控制面概览图">
     <mxGraphModel dx="1313" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -938,7 +938,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="3tQEH1BAYR5YkgcggtwK" name="交易计费流程">
-    <mxGraphModel dx="4377" dy="3716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="8206" dy="5944" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WrHYWQj-9iy9W-z3u4jK-0" />
         <mxCell id="WrHYWQj-9iy9W-z3u4jK-1" parent="WrHYWQj-9iy9W-z3u4jK-0" />
@@ -3839,6 +3839,12 @@
         </mxCell>
         <mxCell id="pmuN4xuMfUckKLYftZTp-3" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;rotation=-180;" vertex="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
           <mxGeometry x="1140" y="-560" width="20" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="pmuN4xuMfUckKLYftZTp-4" value="OpenAPI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry x="1140" y="-790" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pmuN4xuMfUckKLYftZTp-5" value="内部API" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WrHYWQj-9iy9W-z3u4jK-1">
+          <mxGeometry x="1120" y="-380" width="60" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
