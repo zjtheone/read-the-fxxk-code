@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-14T07:57:14.386Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="vo8QBDfl65mQeVbgylYD" version="14.5.10" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2021-04-14T08:59:09.752Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="sc89z1Wu7rRBjm9b3NXu" version="14.5.10" type="github" pages="8">
   <diagram id="KfRbmlJhNQrDs0zASMoi" name="TPaaS控制面概览图">
     <mxGraphModel dx="1289" dy="730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -4756,11 +4756,17 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="i4XEF-E0Z_sHJyK2BcTH" name="Page-8">
-    <mxGraphModel dx="4050" dy="1833" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="i4XEF-E0Z_sHJyK2BcTH" name="自动化交付">
+    <mxGraphModel dx="2975" dy="1222" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="V90E-sB4fEwCEWujJh5l-0" />
         <mxCell id="V90E-sB4fEwCEWujJh5l-1" parent="V90E-sB4fEwCEWujJh5l-0" />
+        <mxCell id="V90E-sB4fEwCEWujJh5l-101" value="" style="endArrow=classic;html=1;fontSize=27;fontColor=#00FFFF;entryX=0.5;entryY=0.5;entryDx=0;entryDy=-15;entryPerimeter=0;" edge="1" parent="V90E-sB4fEwCEWujJh5l-1" target="V90E-sB4fEwCEWujJh5l-100">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1009.71" y="300" as="sourcePoint" />
+            <mxPoint x="1009.9999999999995" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-89" value="" style="endArrow=classic;html=1;fontSize=27;fontColor=#00FFFF;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="V90E-sB4fEwCEWujJh5l-1" target="V90E-sB4fEwCEWujJh5l-92">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-10.589999999999918" y="300" as="sourcePoint" />
@@ -4797,7 +4803,7 @@
             <mxPoint x="195" y="970" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-2" value="&lt;b style=&quot;font-size: 27px;&quot;&gt;&lt;font style=&quot;font-size: 27px;&quot; color=&quot;#000000&quot;&gt;一键式部署设计&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#00FFFF;fontSize=27;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-2" value="&lt;b style=&quot;font-size: 27px&quot;&gt;&lt;font style=&quot;font-size: 27px&quot; color=&quot;#000000&quot;&gt;自动化交付&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#00FFFF;fontSize=27;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
           <mxGeometry x="268" y="80" width="260" height="20" as="geometry" />
         </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-4" value="&lt;font color=&quot;#000000&quot;&gt;预计检查阶段&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
@@ -4842,7 +4848,7 @@
         <mxCell id="V90E-sB4fEwCEWujJh5l-24" value="&lt;font color=&quot;#000000&quot;&gt;成功&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
           <mxGeometry x="359" y="381" width="80" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-25" value="&lt;font color=&quot;#000000&quot;&gt;中间层部署&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-25" value="&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;中间层部署&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 11px&quot;&gt;1，数据库自动初始化&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;2，...&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
           <mxGeometry x="340" y="450" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-26" value="&lt;font color=&quot;#000000&quot;&gt;成功&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
@@ -4944,8 +4950,8 @@
         <mxCell id="V90E-sB4fEwCEWujJh5l-75" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 12px;&quot;&gt;结束&lt;/font&gt;" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.start;fontSize=12;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
           <mxGeometry x="760" y="700" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-76" value="&lt;h1&gt;&lt;b style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;一键式部署&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;1，kubeneters的Job形式，采用ansible/python脚本方式实现；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;2，每个大的步骤都有开关，可以单独执行；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;3，大步骤下的小步骤开关酌情添加；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;4，开关以环境变量的方式传入Job中；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;5，大步骤失败需要停止；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;6，&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=12;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
-          <mxGeometry x="990" y="185" width="790" height="205" as="geometry" />
+        <mxCell id="V90E-sB4fEwCEWujJh5l-76" value="&lt;h1&gt;&lt;b style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;一键式交付&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;1，kubeneters的Job形式，采用ansible/python脚本方式实现；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;2，每个大的步骤都有开关，可以单独执行；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;3，大步骤下的小步骤开关酌情添加；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;4，开关以环境变量的方式传入Job中；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;5，大步骤失败需要停止；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;6，ansible可以再在各个不同的阶段启job来完成不同阶段的任务&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=12;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+          <mxGeometry x="1320" y="173" width="880" height="265" as="geometry" />
         </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-80" value="&lt;font color=&quot;#000000&quot;&gt;自动构建阶段？&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
           <mxGeometry x="-70" y="185" width="120" height="60" as="geometry" />
@@ -4976,6 +4982,30 @@
         </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-92" value="&lt;font color=&quot;#000000&quot;&gt;结果汇报&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
           <mxGeometry x="-76" y="841" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="V90E-sB4fEwCEWujJh5l-93" value="&lt;font color=&quot;#000000&quot;&gt;健康巡检&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+          <mxGeometry x="950" y="188" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="V90E-sB4fEwCEWujJh5l-94" value="&lt;font color=&quot;#000000&quot;&gt;operator健康巡检&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+          <mxGeometry x="950" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="V90E-sB4fEwCEWujJh5l-95" value="&lt;font color=&quot;#000000&quot;&gt;中间层健康巡检&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+          <mxGeometry x="950" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="V90E-sB4fEwCEWujJh5l-96" value="&lt;font color=&quot;#000000&quot;&gt;前端健康巡检&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+          <mxGeometry x="950" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="V90E-sB4fEwCEWujJh5l-97" value="&lt;font color=&quot;#000000&quot;&gt;e2e冒烟测试&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+          <mxGeometry x="950" y="575" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="V90E-sB4fEwCEWujJh5l-98" value="&lt;font color=&quot;#000000&quot;&gt;结果汇报&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+          <mxGeometry x="950" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="V90E-sB4fEwCEWujJh5l-100" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 12px;&quot;&gt;结束&lt;/font&gt;" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.start;fontSize=12;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+          <mxGeometry x="970" y="760" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V90E-sB4fEwCEWujJh5l-102" value="" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=27;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+          <mxGeometry x="995" y="280" width="30" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
