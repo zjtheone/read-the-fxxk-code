@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-15T07:56:48.081Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="2cymt7p53jTYU8XFf1LY" version="14.6.0" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2021-04-15T07:58:46.149Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="QOMUnkkebHIFPTanyXES" version="14.6.0" type="github" pages="8">
   <diagram id="KfRbmlJhNQrDs0zASMoi" name="TPaaS控制面概览图">
     <mxGraphModel dx="1289" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -4757,7 +4757,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="i4XEF-E0Z_sHJyK2BcTH" name="自动化交付">
-    <mxGraphModel dx="3405" dy="1452" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5983" dy="2904" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="V90E-sB4fEwCEWujJh5l-0" />
         <mxCell id="V90E-sB4fEwCEWujJh5l-1" parent="V90E-sB4fEwCEWujJh5l-0" />
@@ -4803,7 +4803,7 @@
             <mxPoint x="200" y="465" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-55" value="" style="endArrow=classic;html=1;fontSize=27;fontColor=#00FFFF;" parent="V90E-sB4fEwCEWujJh5l-1" edge="1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-55" value="" style="endArrow=classic;html=1;fontSize=27;fontColor=#00FFFF;" parent="V90E-sB4fEwCEWujJh5l-1" edge="1" target="V90E-sB4fEwCEWujJh5l-17">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="190" y="300" as="sourcePoint" />
             <mxPoint x="195" y="970" as="targetPoint" />
@@ -4840,10 +4840,10 @@
           <mxGeometry x="154" y="810" width="80" height="50" as="geometry" />
         </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-16" value="&lt;font color=&quot;#000000&quot;&gt;结果汇报&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
-          <mxGeometry x="124" y="878" width="140" height="60" as="geometry" />
+          <mxGeometry x="125" y="1050" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-17" value="&lt;font color=&quot;#000000&quot;&gt;满足部署条件&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
-          <mxGeometry x="155" y="970" width="80" height="50" as="geometry" />
+          <mxGeometry x="156" y="1152" width="80" height="50" as="geometry" />
         </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-18" value="&lt;font color=&quot;#000000&quot;&gt;部署阶段&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="340" y="185" width="120" height="60" as="geometry" />
@@ -5036,6 +5036,12 @@
         </mxCell>
         <mxCell id="lLRa9yt1tSWn9jBALsAs-6" value="&lt;font color=&quot;#000000&quot;&gt;修复建议&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
           <mxGeometry x="1140" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lLRa9yt1tSWn9jBALsAs-8" value="&lt;font color=&quot;#000000&quot;&gt;其他依赖项检查（如：mysql依赖s3）&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+          <mxGeometry x="128" y="890" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lLRa9yt1tSWn9jBALsAs-9" value="&lt;font color=&quot;#000000&quot;&gt;满足&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+          <mxGeometry x="157" y="970" width="80" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
