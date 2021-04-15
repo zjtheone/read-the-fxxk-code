@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-15T07:58:46.149Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="QOMUnkkebHIFPTanyXES" version="14.6.0" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2021-04-15T08:03:44.948Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="vlM97yHt2WAtE__iEQfa" version="14.6.0" type="github" pages="8">
   <diagram id="KfRbmlJhNQrDs0zASMoi" name="TPaaS控制面概览图">
     <mxGraphModel dx="1289" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -4757,7 +4757,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="i4XEF-E0Z_sHJyK2BcTH" name="自动化交付">
-    <mxGraphModel dx="5983" dy="2904" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1901" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="V90E-sB4fEwCEWujJh5l-0" />
         <mxCell id="V90E-sB4fEwCEWujJh5l-1" parent="V90E-sB4fEwCEWujJh5l-0" />
@@ -4797,7 +4797,7 @@
             <mxPoint x="399" y="820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-58" value="" style="endArrow=classic;html=1;fontSize=27;fontColor=#00FFFF;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="V90E-sB4fEwCEWujJh5l-1" target="V90E-sB4fEwCEWujJh5l-42" edge="1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-58" value="" style="endArrow=classic;html=1;fontSize=16;fontColor=#00FFFF;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontStyle=1" parent="V90E-sB4fEwCEWujJh5l-1" target="V90E-sB4fEwCEWujJh5l-42" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="240" y="215" as="sourcePoint" />
             <mxPoint x="200" y="465" as="targetPoint" />
@@ -4812,7 +4812,7 @@
         <mxCell id="V90E-sB4fEwCEWujJh5l-2" value="&lt;b style=&quot;font-size: 27px&quot;&gt;&lt;font style=&quot;font-size: 27px&quot; color=&quot;#000000&quot;&gt;自动化交付&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#00FFFF;fontSize=27;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="268" y="80" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-4" value="&lt;font color=&quot;#000000&quot;&gt;预计检查阶段&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-4" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 16px&quot;&gt;预检查阶段&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;fontStyle=1;fontSize=16;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="130" y="185" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-5" value="&lt;font color=&quot;#000000&quot;&gt;检查Kubenetes的版本&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
@@ -4845,7 +4845,7 @@
         <mxCell id="V90E-sB4fEwCEWujJh5l-17" value="&lt;font color=&quot;#000000&quot;&gt;满足部署条件&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="156" y="1152" width="80" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-18" value="&lt;font color=&quot;#000000&quot;&gt;部署阶段&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-18" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 16px;&quot;&gt;部署阶段&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;fontStyle=1;fontSize=16;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="340" y="185" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-23" value="&lt;font color=&quot;#000000&quot;&gt;operator部署&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
@@ -4869,7 +4869,7 @@
         <mxCell id="V90E-sB4fEwCEWujJh5l-29" value="&lt;font color=&quot;#000000&quot;&gt;结果汇报&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="330" y="870" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-30" value="&lt;font color=&quot;#000000&quot;&gt;测试验收阶段&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-30" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 16px;&quot;&gt;测试验收阶段&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;fontStyle=1;fontSize=16;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="540" y="185" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-31" value="&lt;font color=&quot;#000000&quot;&gt;operator e2e 测试&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
@@ -4899,19 +4899,19 @@
         <mxCell id="V90E-sB4fEwCEWujJh5l-41" value="&lt;span style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;前端测试结果&amp;nbsp;&lt;/span&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;汇报&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="529" y="920" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-42" value="&lt;font color=&quot;#000000&quot;&gt;结果汇总&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-42" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 16px;&quot;&gt;结果汇总&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;fontStyle=1;fontSize=16;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="740" y="185" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-44" value="" style="html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.switch;fillColor=#8F8E94;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-44" value="" style="html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.switch;fillColor=#8F8E94;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=16;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontStyle=1" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="120" y="170" width="15" height="15" as="geometry" />
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-46" value="" style="html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.switch;fillColor=#8F8E94;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-46" value="" style="html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.switch;fillColor=#8F8E94;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=16;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontStyle=1" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="330" y="170" width="15" height="15" as="geometry" />
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-47" value="" style="html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.switch;fillColor=#8F8E94;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-47" value="" style="html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.switch;fillColor=#8F8E94;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=16;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontStyle=1" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="529" y="173" width="15" height="15" as="geometry" />
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-48" value="" style="html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.switch;fillColor=#8F8E94;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-48" value="" style="html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.switch;fillColor=#8F8E94;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=16;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontStyle=1" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="725" y="173" width="15" height="15" as="geometry" />
         </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-49" value="&lt;font color=&quot;#000000&quot;&gt;环境及版本汇报&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
@@ -4959,7 +4959,7 @@
         <mxCell id="V90E-sB4fEwCEWujJh5l-76" value="&lt;h1&gt;&lt;b style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;一键式交付&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;1，kubeneters的Job形式，采用ansible/python脚本方式实现；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;2，每个大的步骤都有开关，可以单独执行；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;3，大步骤下的小步骤开关酌情添加；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;4，开关以环境变量的方式传入Job中；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;5，大步骤失败需要停止；&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 255 , 255) ; font-size: 27px ; text-align: center&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;6，ansible可以再在各个不同的阶段启job来完成不同阶段的任务&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=12;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="1320" y="173" width="880" height="265" as="geometry" />
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-80" value="&lt;font color=&quot;#000000&quot;&gt;自动构建阶段？&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-80" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 16px&quot;&gt;自动构建阶段&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;fontStyle=1;fontSize=16;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="-70" y="185" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-81" value="" style="html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.switch;fillColor=#8F8E94;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
@@ -4989,7 +4989,7 @@
         <mxCell id="V90E-sB4fEwCEWujJh5l-92" value="&lt;font color=&quot;#000000&quot;&gt;结果汇报&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="-76" y="841" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="V90E-sB4fEwCEWujJh5l-93" value="&lt;font color=&quot;#000000&quot;&gt;健康巡检&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
+        <mxCell id="V90E-sB4fEwCEWujJh5l-93" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 16px;&quot;&gt;健康巡检&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;fontStyle=1;fontSize=16;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
           <mxGeometry x="950" y="185" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="V90E-sB4fEwCEWujJh5l-94" value="&lt;font color=&quot;#000000&quot;&gt;operator健康巡检&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" parent="V90E-sB4fEwCEWujJh5l-1" vertex="1">
@@ -5022,7 +5022,7 @@
         <mxCell id="lLRa9yt1tSWn9jBALsAs-1" value="&lt;font color=&quot;#000000&quot;&gt;成功&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;fillColor=#FFFFFF;gradientColor=none;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
           <mxGeometry x="358" y="800" width="80" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="lLRa9yt1tSWn9jBALsAs-2" value="&lt;font color=&quot;#000000&quot;&gt;故障诊断&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
+        <mxCell id="lLRa9yt1tSWn9jBALsAs-2" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 16px;&quot;&gt;故障诊断&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;fontStyle=1;fontSize=16;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
           <mxGeometry x="1140" y="185" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="lLRa9yt1tSWn9jBALsAs-3" value="&lt;font color=&quot;#000000&quot;&gt;日志收集&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#00FFFF;strokeColor=#000000;gradientColor=none;fillColor=#FFFFFF;" vertex="1" parent="V90E-sB4fEwCEWujJh5l-1">
