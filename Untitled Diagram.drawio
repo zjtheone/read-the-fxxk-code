@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-14T08:14:01.774Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="NiNdCMt3DQFNL1Uy08uV" version="16.5.6" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-02-14T08:15:51.852Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="ob0-kf1kz3Ls2ldmSc-k" version="16.5.6" type="github" pages="5">
   <diagram id="oGYYmFGIoyQJ5Adorzvi" name="异常管理系统概图">
     <mxGraphModel dx="1623" dy="1083" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -414,6 +414,9 @@
       <root>
         <mxCell id="zvhV5quNcCSVeBcprwnH-0" />
         <mxCell id="zvhV5quNcCSVeBcprwnH-1" parent="zvhV5quNcCSVeBcprwnH-0" />
+        <mxCell id="7-8EtsIWmbY0BDTEdVeG-2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;glass=0;fontSize=18;fontColor=#000000;strokeColor=default;dashed=1;" vertex="1" parent="zvhV5quNcCSVeBcprwnH-1">
+          <mxGeometry x="70" y="10" width="610" height="610" as="geometry" />
+        </mxCell>
         <mxCell id="zvhV5quNcCSVeBcprwnH-2" value="Kafka" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="zvhV5quNcCSVeBcprwnH-1">
           <mxGeometry x="330" y="320" width="120" height="60" as="geometry" />
         </mxCell>
@@ -587,7 +590,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="akobptNW2fEefrI9KhN-" name="规范">
-    <mxGraphModel dx="909" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1515" dy="1267" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="EzZDEEVDBhqAyVVK2n45-0" />
         <mxCell id="EzZDEEVDBhqAyVVK2n45-1" parent="EzZDEEVDBhqAyVVK2n45-0" />
