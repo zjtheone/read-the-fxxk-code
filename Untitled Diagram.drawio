@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-16T10:25:16.828Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="47Q85P-PDLU2jxZpaaxw" version="16.6.4" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2022-03-16T10:26:29.194Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="itJf_4WF1WR_UCWqGdeJ" version="16.6.4" type="github" pages="7">
   <diagram id="oGYYmFGIoyQJ5Adorzvi" name="异常管理系统概图">
     <mxGraphModel dx="1256" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1002,7 +1002,7 @@
         <mxCell id="scBIgTew7Hd-PkQwb_fk-52" value="S3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="scBIgTew7Hd-PkQwb_fk-1">
           <mxGeometry x="810" y="-530" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="scBIgTew7Hd-PkQwb_fk-53" value="&lt;h1&gt;&lt;font style=&quot;font-size: 30px&quot;&gt;格式化日志存储&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;reginon，az，node，instance，dockerid，模块，时间戳，告警level，内容；&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;后期分析通过clickhouse加载s3文件映射成table来select；&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=24;" vertex="1" parent="scBIgTew7Hd-PkQwb_fk-1">
+        <mxCell id="scBIgTew7Hd-PkQwb_fk-53" value="&lt;h1&gt;&lt;font style=&quot;font-size: 30px&quot;&gt;格式化日志存储&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;region，az，node，instance，dockerid，模块，时间戳，告警level，内容；&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;后期分析通过clickhouse加载s3文件映射成table来做select操作；&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=24;" vertex="1" parent="scBIgTew7Hd-PkQwb_fk-1">
           <mxGeometry x="970" y="-630" width="870" height="230" as="geometry" />
         </mxCell>
         <mxCell id="scBIgTew7Hd-PkQwb_fk-54" value="复杂版本：flink流计算综合日志和监控做智能告警聚合，抑制处理；" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=30;" vertex="1" parent="scBIgTew7Hd-PkQwb_fk-1">
