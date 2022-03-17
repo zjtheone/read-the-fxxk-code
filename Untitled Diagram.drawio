@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-16T10:26:29.194Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="itJf_4WF1WR_UCWqGdeJ" version="16.6.4" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2022-03-17T08:52:36.203Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="iBs73McHzlRXuhcoFa1a" version="16.6.4" type="github" pages="7">
   <diagram id="oGYYmFGIoyQJ5Adorzvi" name="异常管理系统概图">
     <mxGraphModel dx="1256" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -777,8 +777,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="U0xRJF_nM6AlK1cMHBpG" name="Page-7">
-    <mxGraphModel dx="1675" dy="2182" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="U0xRJF_nM6AlK1cMHBpG" name="告警抑制方案">
+    <mxGraphModel dx="1932" dy="2338" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="scBIgTew7Hd-PkQwb_fk-0" />
         <mxCell id="scBIgTew7Hd-PkQwb_fk-1" parent="scBIgTew7Hd-PkQwb_fk-0" />
