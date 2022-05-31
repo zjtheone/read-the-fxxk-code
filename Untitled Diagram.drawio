@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-31T03:27:41.264Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="bdU7gUsL7pLG8G_Q1MZD" version="18.1.3" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2022-05-31T03:32:07.168Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="15E8jCpaPbzNZY9X5CpD" version="18.1.3" type="github" pages="8">
   <diagram id="oGYYmFGIoyQJ5Adorzvi" name="异常管理系统概图">
     <mxGraphModel dx="1240" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1020,16 +1020,16 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="0QC_mLAfubuwe9KZcRjw-1" value="Devops In One" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="160" width="320" height="390" as="geometry" />
+          <mxGeometry x="210" y="160" width="320" height="390" as="geometry" />
         </mxCell>
         <mxCell id="0QC_mLAfubuwe9KZcRjw-2" value="devopsrds" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="190" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="0QC_mLAfubuwe9KZcRjw-3" value="devopsmongo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="230" width="100" height="30" as="geometry" />
+          <mxGeometry x="400" y="220" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="0QC_mLAfubuwe9KZcRjw-4" value="devopsxxx" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="270" width="100" height="30" as="geometry" />
+          <mxGeometry x="400" y="250" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="0QC_mLAfubuwe9KZcRjw-5" value="User" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="230" y="190" width="100" height="30" as="geometry" />
@@ -1044,7 +1044,46 @@
           <mxGeometry x="230" y="310" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="0QC_mLAfubuwe9KZcRjw-9" value="devoptpaas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="310" width="100" height="30" as="geometry" />
+          <mxGeometry x="400" y="300" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mzmIuRS-wSOl6J61llOH-1" value="传送门" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="415" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mzmIuRS-wSOl6J61llOH-2" value="DMS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="340" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mzmIuRS-wSOl6J61llOH-3" value="ARK" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="380" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mzmIuRS-wSOl6J61llOH-4" value="运营后台" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="430" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mzmIuRS-wSOl6J61llOH-5" value="监空大屏" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="480" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mzmIuRS-wSOl6J61llOH-6" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="360" width="20" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="mzmIuRS-wSOl6J61llOH-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="mzmIuRS-wSOl6J61llOH-1" target="mzmIuRS-wSOl6J61llOH-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="420" as="sourcePoint" />
+            <mxPoint x="300" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mzmIuRS-wSOl6J61llOH-8" value="宿主机管理&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;整机迁移&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="380" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mzmIuRS-wSOl6J61llOH-9" value="告警管理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="470" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mzmIuRS-wSOl6J61llOH-10" value="上线管理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="410" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mzmIuRS-wSOl6J61llOH-11" value="监控大屏" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="440" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mzmIuRS-wSOl6J61llOH-13" value="日志管理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="500" width="100" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
