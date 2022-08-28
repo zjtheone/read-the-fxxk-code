@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-28T14:10:20.973Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="HMlsXzkWOQuks82fAc2R" version="20.2.6" type="github" pages="12">
+<mxfile host="app.diagrams.net" modified="2022-08-28T14:11:18.043Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="eruQmb9aiNgpuiOQM0CN" version="20.2.6" type="github" pages="12">
   <diagram id="KfRbmlJhNQrDs0zASMoi" name="TPaaS控制面概览图">
     <mxGraphModel dx="1041" dy="721" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -6100,7 +6100,7 @@
           <mxGeometry x="2202" y="1125" width="90" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VAuQiNUYGyOOZxrDqAPY-18" value="存量迁移" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="1904.5" y="1250" width="80" height="30" as="geometry" />
+          <mxGeometry x="1889.5" y="1093.75" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VAuQiNUYGyOOZxrDqAPY-20" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#330000;fontStyle=1;fontSize=14;" edge="1" parent="1" source="VAuQiNUYGyOOZxrDqAPY-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -6116,8 +6116,8 @@
         </mxCell>
         <mxCell id="VAuQiNUYGyOOZxrDqAPY-23" value="主从复制" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#3333FF;fontStyle=1;fontSize=14;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1845" y="1330" as="sourcePoint" />
-            <mxPoint x="2045" y="1330" as="targetPoint" />
+            <mxPoint x="1830" y="1173.75" as="sourcePoint" />
+            <mxPoint x="2030" y="1173.75" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VAuQiNUYGyOOZxrDqAPY-24" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0.25;exitY=0;exitDx=0;exitDy=0;strokeColor=#FF0000;strokeWidth=3;" edge="1" parent="1" source="g0SUAGTRex0DvNF-knDZ-6">
@@ -6134,6 +6134,9 @@
           <mxGeometry x="-0.0679" y="-14" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="OVr7HfxfNuT3GLmQ-l50-5" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2410" y="1290" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
