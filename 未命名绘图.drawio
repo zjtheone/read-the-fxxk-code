@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-29T02:51:36.007Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="veYnNd1fM-cPvovBiprX" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-29T06:26:06.540Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="HeZzs8HVhT8xy19NKcGv" version="20.2.7" type="github">
   <diagram id="7NXCHy1C1isHsXD3MS3e" name="第 1 页">
     <mxGraphModel dx="1041" dy="721" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,13 +7,13 @@
         <mxCell id="jMzCAzvdCrpXLxqonx3--2" value="告警事件&lt;br style=&quot;font-size: 12px;&quot;&gt;消息队列" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="120" y="170" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jMzCAzvdCrpXLxqonx3--3" value="故障现场自动快照&lt;br style=&quot;font-size: 12px;&quot;&gt;1，故障源关联监控自动收集&lt;br style=&quot;font-size: 12px;&quot;&gt;2，故障源管理日志自动收集" style="rounded=1;whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+        <mxCell id="jMzCAzvdCrpXLxqonx3--3" value="故障现场自动快照&lt;br style=&quot;font-size: 12px;&quot;&gt;1，故障源关联监控自动收集&lt;br style=&quot;font-size: 12px;&quot;&gt;2，故障源管理日志自动收集&lt;br&gt;3，运维操作日志审计及收集" style="rounded=1;whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="322" y="170" width="158" height="60" as="geometry" />
         </mxCell>
         <mxCell id="jMzCAzvdCrpXLxqonx3--4" value="告警优化：人工处理&lt;br style=&quot;font-size: 12px;&quot;&gt;系统优化：bug修复" style="rounded=1;whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="341" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jMzCAzvdCrpXLxqonx3--5" value="运维操作&lt;br style=&quot;font-size: 12px;&quot;&gt;1，运维平台&lt;br style=&quot;font-size: 12px;&quot;&gt;2，自动化工具" style="rounded=1;whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+        <mxCell id="jMzCAzvdCrpXLxqonx3--5" value="运维操作&lt;br style=&quot;font-size: 12px;&quot;&gt;1，运维平台工具&lt;br style=&quot;font-size: 12px;&quot;&gt;2，自动化工具&lt;br&gt;3，一键根因分析" style="rounded=1;whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="570" y="170" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="jMzCAzvdCrpXLxqonx3--11" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontStyle=1;fontSize=12;strokeColor=#FF3333;" parent="1" source="jMzCAzvdCrpXLxqonx3--2" target="jMzCAzvdCrpXLxqonx3--3" edge="1">
@@ -117,7 +117,7 @@
             <mxPoint x="11" y="-46" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JwlfBaq1WsFjzgbzM6YH-9" value="更全面的告警事件&lt;br style=&quot;font-size: 12px;&quot;&gt;消息队列&lt;br&gt;机器/OS/Network" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="JwlfBaq1WsFjzgbzM6YH-9" value="更全面的告警事件&lt;br style=&quot;font-size: 12px;&quot;&gt;消息队列&lt;br&gt;机器/OS/Network" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="130" y="322" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="JwlfBaq1WsFjzgbzM6YH-10" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;MTTR缩短&lt;/font&gt;&lt;/b&gt;" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeColor=#d6b656;fillColor=#fff2cc;" edge="1" parent="1">
