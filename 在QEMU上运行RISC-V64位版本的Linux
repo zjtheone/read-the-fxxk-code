@@ -1,0 +1,205 @@
+在 QEMU 上运行 RISC-V 64 位版本的 Linux
+
+https://zhuanlan.zhihu.com/p/258394849
+
+汪辰
+汪辰
+中科院软件所
+127 人赞同了该文章
+前言
+参考
+
+【参考 1】网页版 “Running 64- and 32-bit RISC-V Linux on QEMU”
+Running 64- and 32-bit RISC-V Linux on QEMU
+​risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html
+【参考 2】"Github 上的 RISC-V GNU Compiler Toolchain 仓库"
+https://github.com/riscv/riscv-gnu-toolchain
+​github.com/riscv/riscv-gnu-toolchain
+RISC-V 基金会为方便大家熟悉 RISC-V 生态，维护了一份入门手册 “RISC-V - Getting Started Guide”，即参考中的 【参考 1】，其中有一章 “Running 64- and 32-bit RISC-V Linux on QEMU” 介绍了如何从源码开始自行构建一个 Linux 系统（包含 32 位和 64 位版本）并将其在 QEMU 上运行。
+
+但不知道是我的原因还是这份参考的原因，我在按照原文描述搭建过程中并没有成功，经过多番尝试和修改后，终于还是成功了，赶紧记录下来并分享给大家，如果您也遇到了类似搭建失败的问题，欢迎参考一下本文。但请注意本文仅供参考，并不保证在您的环境下一定是可以工作的，如果有问题欢迎指出。同时我提供这篇说明并不意味着我对官方原文指导的否定，至少在基本步骤上我还是主要参考了原文的描述。
+
+另外两个备注一下：
+
+本文实验针对的是 RISC-V 64 位的版本，32 位的情况同学感兴趣可以自己尝试。
+本文主要侧重步骤描述，因此有些操作的 background 图省事陈述的并不够详细，感兴趣的同学请自行研究。
+0. 环境准备
+本次实验基于 Ubuntu 20.04 LTS
+
+$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description: Ubuntu 20.04 LTS
+Release: 20.04
+Codename: focal
+提前需要安装的软件如下：
+
+$ sudo apt install autoconf automake autotools-dev curl libmpc-dev libmpfr-dev libgmp-dev \
+                 gawk build-essential bison flex texinfo gperf libtool patchutils bc \
+                 zlib1g-dev libexpat-dev git \
+                 libglib2.0-dev libfdt-dev libpixman-1-dev \
+                 libncurses5-dev libncursesw5-dev
+然后建立一个工作目录 riscv64-linux，后面的操作都在这个目录下进行
+
+$ mkdir riscv64-linux
+$ cd riscv64-linux
+1. 制作交叉工具链 riscv-gnu-toolchain
+
+
+本章节以下内容为老文章中写的，最新的制作步骤专门总结了一篇在这里。
+
+汪辰：从源码构建 RISC-V 的 GCC 交叉工具链
+8 赞同 · 4 评论文章
+
+===================================
+
+1.1 下载源码
+如果访问 github 速度慢，可以从国内 gitee 的 riscv-gnu-toolchain 镜像仓库下载，加快下载速度。
+
+备注一下，我这里没有 checkout 特定的版本，就是取的最新的 master，对应的 commit 是 7f1f4ab5b0e04f267a197c2e99449de775891a4d。
+
+$ git clone https://gitee.com/mirrors/riscv-gnu-toolchain
+进入源码目录：
+
+$ cd riscv-gnu-toolchain
+注意上面 clone 的主仓库并不包含子仓库的内容，所以需要继续更新子仓库。注意这里首先排除了 qemu 这个子仓库，一来因为 qemu 完整下载太大；二来 qemu 对 toolchain 的编译本身来说其实并不需要。
+
+$ git rm qemu
+$ git submodule update --init --recursive
+耐心等待子仓库下载完成。
+
+1.2 编译 Linux 的交叉工具链
+注意配置时指定安装到 /opt/riscv64，所以 make 时需要 sudo。
+
+$ ./configure --prefix=/opt/riscv64 
+$ sudo make linux -j $(nproc)
+1.3 导出 toolchain 的安装路径
+export PATH="$PATH:/opt/riscv64/bin"
+也可以写入 .bashrc 文件
+
+1.4 测试 toolchain 是否安装成功
+$ riscv64-unknown-linux-gnu-gcc -v
+出现类似如下输出表示工具链编译安装正常
+
+Using built-in specs.
+COLLECT_GCC=riscv64-unknown-linux-gnu-gcc
+COLLECT_LTO_WRAPPER=/opt/riscv64/libexec/gcc/riscv64-unknown-linux-gnu/10.1.0/lto-wrapper
+Target: riscv64-unknown-linux-gnu
+Configured with: /home/u/ws/riscv64-linux/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/opt/riscv64 --with-sysroot=/opt/riscv64/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64d --with-arch=rv64imafdc --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 (GCC)
+2. 编译 QEMU
+先确保回到工作目录 riscv64-linux。
+
+2.1 下载源码
+注意获取源码时采用 git clone 的方式会非常慢，所以我们推荐根据你需要的版本号直接下载对应的源码压缩包的方式，本次实验采用的是目前最新的 v5.1.0。
+
+$ wget https://download.qemu.org/qemu-5.1.0.tar.xz
+$ tar xvJf qemu-5.1.0.tar.xz
+注意解压时选项里是大写的 J，另外一个小贴士是：如果下载时觉得网络速度过慢，可以试试迅雷下载会快很多 :)
+
+2.2 编译和安装
+进入解压后的目录，执行配置、编译和安装。注意这里配置时指定安装到 /opt/qemu 下，所以 make install 时需要 sudo，如果不想 sudo 也可以设置到用户自己的工作目录下。另外这里 riscv64-softmmu 指定了生成 system emulator，riscv64-linux-user 指令生成了 user mode emulator。
+
+$ cd qemu-5.1.0/
+$ ./configure --target-list=riscv64-softmmu,riscv64-linux-user --prefix=/opt/qemu
+$ make -j $(nproc)
+$ sudo make install
+2.3 导出 qemu 的安装目录
+注意这里一并保持导出前面 toolchain 的安装目录，如果嫌麻烦以后也可以直接添加到 .bashrc 文件中去，这里不再赘述。
+
+export PATH=$PATH:/opt/riscv64/bin:/opt/qemu/bin
+2.4 验证安装是否正确：
+$ qemu-system-riscv64 --version
+出现类似如下输出表示 qemu 工作正常
+
+QEMU emulator version 5.1.0
+Copyright (c) 2003-2020 Fabrice Bellard and the QEMU Project developers
+3. 制作内核
+先确保回到工作目录 riscv64-linux。
+
+3.1 下载内核源码
+如果访问 github 速度慢，同样可以从国内 gitee 的 riscv-gnu-toolchain 镜像仓库下载，加快下载速度。
+
+$ git clone https://gitee.com/mirrors/linux.git
+下载完毕后进入内核源码目录
+
+$ cd linux
+3.2 检出特定版本
+这里我们检出版本是 5.4，大家可以尝试其他版本，我这里和 【参考 1】保持一致。
+
+$ git checkout v5.4
+3.3 配置和编译
+$ make ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- defconfig
+$ make ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- -j $(nproc)
+4. 制作 rootfs
+先确保回到工作目录 riscv64-linux。
+
+4.1 下载 busybox 源码
+如果访问 github 速度慢，同样可以从国内 gitee 的 riscv-gnu-toolchain 镜像仓库下载，加快下载速度。
+
+$ git clone https://gitee.com/mirrors/busyboxsource.git
+下载完后进入 busybox 源码目录
+
+$ cd busyboxsource
+备注一下，我这里没有 checkout 特定的版本，就是取的最新的 master， commit 是 a949399d178f7b052ada2099c62621736eafce44。
+
+4.2 配置 busybox
+$ CROSS_COMPILE=riscv64-unknown-linux-gnu- make menuconfig
+打开配置菜单后进入第一行的 "Settings"，在"Build Options"节中，选中 “Build static binary (no shared libs)”，设置好后退出保存配置。
+
+4.3 编译和安装
+$ CROSS_COMPILE=riscv64-unknown-linux-gnu- make -j $(nproc)
+$ CROSS_COMPILE=riscv64-unknown-linux-gnu- make install
+此时观察源码目录 busyboxsource 下新出现一个 _install 目录 ，可以看到生成的东西。
+
+$ ls _install
+bin  linuxrc  sbin  usr
+4.4 制作一个最小的文件系统
+退出 busyboxsource 目录，回到工作目录 riscv64-linux 下，然后输入如下命令：
+
+$ qemu-img create rootfs.img  1g
+$ mkfs.ext4 rootfs.img
+其中，
+
+qemu-img 是我们在制作 qemu 时生成的 qemu 生成 image 的工具，安装在 /opt/qemu/bin 下。
+rootfs.img 是文件系统的镜像文件名，1g 是磁盘文件大小，可以根据需要修改。
+我们将磁盘文件格式化为 ext4 文件格式。
+以上完成后把步骤 4.3 中生成的的 _install 目录下的东西拷贝到这个文件系统中，除此之外再创建一些必要的文件和目录。
+
+$ mkdir rootfs
+$ sudo mount -o loop rootfs.img  rootfs
+$ cd rootfs
+$ sudo cp -r ../busyboxsource/_install/* .
+$ sudo mkdir proc sys dev etc etc/init.d
+然后另外再新建一个最简单的 init 的 RC 文件，具体步骤如下：
+
+$ cd etc/init.d/
+$ sudo touch rcS
+$ sudo vi rcS
+编辑该文件内容如下：
+
+#!/bin/sh
+mount -t proc none /proc
+mount -t sysfs none /sys
+/sbin/mdev -s
+然后修改 rcS 文件权限，加上可执行权限，这样当 busybox 的init 运行起来后，就能运行这个 /etc/init.d/rcS 脚本。
+
+$ sudo chmod +x rcS
+最后退出 rootfs 目录并卸载文件系统：
+
+$ sudo umount rootfs
+至此，文件系统就制作完成了。
+
+5. 启动运行
+回到工作目录 riscv64-linux，开始我们见证奇迹的时刻。执行如下命令：
+
+$ qemu-system-riscv64 -M virt -m 256M -nographic -kernel linux/arch/riscv/boot/Image -drive file=rootfs.img,format=raw,id=hd0  -device virtio-blk-device,drive=hd0 -append "root=/dev/vda rw console=ttyS0"
+见到 "lease press Enter to activate this console." 提示后直接回车，无需密码就进入系统了。
+
+另外需要注意的是，在我当前使用的 QEMU 虚拟机中如果输入 poweroff 貌似是无法关机退出，所以如果您也碰到这个情况可以采用 Ctrl+A X，也就是同时按下 Ctrl 和 A 键，同时松开再按下 X 键即可强制退出 QEMU。
+
+Enjoy it :)!
+
+编辑于 2022-09-03 10:57
