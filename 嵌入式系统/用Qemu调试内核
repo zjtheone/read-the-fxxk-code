@@ -1,0 +1,80 @@
+用 qemu 来调试 Kernel
+
+https://www.lizhaozhong.info/archives/1574
+
+January 13th, 2016 by JasonLe's TechLeave a reply »
+引言
+kgdb 方式
+kgdb 的方式需要两台电脑,一台是宿主机,另一台是开发机,在开发机上编译打好补丁的内核代码,然后拷贝到宿主机上运行。注:目前 kgdb 支持的版本比较低了,好像在 2.6.19 左右,如果需要调试高版本的内核比较麻烦,而且需要通过串口方式调试,必须需要两台电脑,安装配置也比较麻烦,不过该方式调试比较准确,不会因为优化问题而无法查看变量。
+
+uml 方式
+uml ( user mode linux kernel ),是一种在用户态调试内核的方式,该调试方式在 2.6 就进入主线了。在源码包中,进入 arch/um 文件夹,就能看到该方式。该方式存在问题是无法调试硬件相关,如果你只需要调试调度、调试文件系统等,那么你可以使用,该方式比较简单,可自行百度。
+
+printk 方式
+这个方式也就是说在想调试的地方打印调试信息,需要反复的编译,反复增减调试信息是比较繁琐的一个地方。
+
+qemu 调试内核
+建议不要从源中拉版本安装,因为可能源中的版本太低,这个问题困扰了我很久,如果版本太低的话,导致文件系统加载的时候会出现故障,会出现以下提示: cannot load filesystem…
+首先从 http://wiki.qemu.org/Download 下载最新版的 qemu 源码,我下的是: qemu-2.4.0.tar.bz2 版本,按照下列方式安装就可以了。
+
+1
+2
+3
+4
+$tar -xvf qemu-2.4.0.tar.bz2
+$cd qemu-2.4.0
+$./configuration
+$make install
+我就默认安装的,并没有修改安装地址,如果有需要的话请自行定制。
+
+源码配置
+1
+2
+3
+$tar -xvf linux-source**
+$cd linux-source**
+$vim Makefile
+编辑 Makefile 文件,将所有 -O2 优化方式修改为 -O0 ,这样可以部分减少查看变量时的 optimized 提示(也就是说变量被编译器优化了,放到寄存器了,无法打印)。
+
+1
+$make menuconfig
+接下来修改内核调试选项
+
+kernel将上述选项都选中。 然后就是 make bzImage。这样就会在 arch/i386/boot/ 下生成 bzImage 文件,内核部分就结束了。
+
+文件系统制作
+这块我主要是借鉴了网上的一个帖子: http://blog.csdn.net/wesleyluo/article/details/7943087 该帖子详细讲解了如何制作根文件系统,如果你遇到跟我一样的问题,就是制作的根文件系统无法使用的话,也就是提示找不到 filesystem ,那么请你转到 buildroot 工具,制作根文件系统。
+
+gdb 调试
+接下来就是调试你的内核啦,不要太激动啊,因为你还是有可能遇到文件系统无法加载啊, qemu 调试报错啊等等问题。
+制作一个脚本来快速启动 qemu 调试
+
+1
+2
+#!/bin/bash
+qemu-system-i386 -kernel linux_path/arch/i386/bzImage -hda rootfs.ext2 -append "root=/dev/sda rw" -s -S
+关于这个 shell 可能有些疑惑, -kernel 就是使用后边的 bzImage 作为内核镜像。 -hda 我的理解就是作为硬盘引导项, -s 是 gdb 调试的快捷方式相当于 -gdb tcp::1234, 打开一个 gdbserver 在 TCP 端口 1234.-S 选项是启动之后就暂停,等待用户命令。
+
+然后新打开一个终端,输入
+
+1
+$gdb linux_path/vmlinux
+等待 gdb 把符号加载完成,加载提示:
+
+1
+$Reading symbols from ..../vmlinux ...done
+这样就加载完成了,接下来输入:
+
+1
+2
+3
+$target remote localhost:1234
+$b start_kernel
+$c
+就开始运行然后停在了 start_kernel , OK 大功告成了。
+
+参考：
+http://blog.csdn.net/wesleyluo/article/details/7943087
+
+Previous Entry: gnuplot 尝鲜
+Next Entry: setjmp和longjmp的另类使用
