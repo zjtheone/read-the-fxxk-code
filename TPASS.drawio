@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-08T03:52:21.275Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="jsQ1auTZ2r2MhKvEZHjo" version="21.4.0" type="github" pages="19">
+<mxfile host="app.diagrams.net" modified="2023-08-08T03:53:18.610Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="VIGFvg4p2aKTn_YTd7K1" version="21.4.0" type="github" pages="19">
   <diagram id="KfRbmlJhNQrDs0zASMoi" name="TPaaS控制面概览图">
     <mxGraphModel dx="1045" dy="625" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7723,7 +7723,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="dBCCqbxIeMcUZiRQyaCg" name="JDStack融合">
-    <mxGraphModel dx="1663" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2320" dy="893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8394,10 +8394,10 @@
         <mxCell id="74CSJfBIpyZyuEcBfJrs-1" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.tick;fontColor=#00FF00;strokeColor=#00FF00;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="1042.5" y="1540" width="25" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="UGNGIhl_BzyOMy3Go1G0-1" value="UI" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="UGNGIhl_BzyOMy3Go1G0-1" value="UI" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=16;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
           <mxGeometry x="2565" y="1030" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="UGNGIhl_BzyOMy3Go1G0-2" value="Gateway" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="UGNGIhl_BzyOMy3Go1G0-2" value="Gateway" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=16;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="2565" y="1120" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UGNGIhl_BzyOMy3Go1G0-3" value="" style="endArrow=classic;html=1;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontStyle=1;fontSize=16;" edge="1" parent="1">
@@ -8409,7 +8409,7 @@
         <mxCell id="UGNGIhl_BzyOMy3Go1G0-4" value="&lt;table style=&quot;font-size: 16px;&quot;&gt;&lt;tbody style=&quot;font-size: 16px;&quot;&gt;&lt;tr style=&quot;font-size: 16px;&quot;&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table style=&quot;font-size: 16px;&quot;&gt;&lt;tbody style=&quot;font-size: 16px;&quot;&gt;&lt;tr style=&quot;font-size: 16px;&quot;&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table style=&quot;font-size: 16px;&quot;&gt;&lt;tbody style=&quot;font-size: 16px;&quot;&gt;&lt;tr style=&quot;font-size: 16px;&quot;&gt;&lt;td style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;/td&gt;&lt;td style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;/td&gt;&lt;td style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;font-size: 16px;&quot;&gt;&lt;td style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;/td&gt;&lt;td style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;/td&gt;&lt;td style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;OpenAPI&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="2690" y="1310" width="210" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="UGNGIhl_BzyOMy3Go1G0-5" value="消息队列&lt;br style=&quot;font-size: 16px;&quot;&gt;UC/资源组/交易计费" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="UGNGIhl_BzyOMy3Go1G0-5" value="消息队列&lt;br style=&quot;font-size: 16px;&quot;&gt;UC/资源组/交易计费" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;fontStyle=1;fontSize=16;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
           <mxGeometry x="2530" y="1515" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UGNGIhl_BzyOMy3Go1G0-7" value="OpenAPI" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=16;labelBackgroundColor=default;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
