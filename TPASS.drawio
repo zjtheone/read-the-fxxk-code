@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-15T09:44:04.490Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="0yfEMidIDa6FBm2kymXg" version="21.6.6" type="github" pages="19">
+<mxfile host="app.diagrams.net" modified="2023-08-15T11:56:08.753Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="3ChpuY0MKuN12jUgSK3I" version="21.6.6" type="github" pages="19">
   <diagram id="KfRbmlJhNQrDs0zASMoi" name="TPaaS控制面概览图">
     <mxGraphModel dx="1306" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7723,7 +7723,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="dBCCqbxIeMcUZiRQyaCg" name="JDStack融合">
-    <mxGraphModel dx="3471" dy="1671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2836" dy="1206" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8697,13 +8697,13 @@
             <mxPoint x="2780" y="2160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-h3G8m6RV8PxEqPPRe6U-41" value="" style="endArrow=classic;html=1;rounded=0;curved=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeColor=#33FF33;strokeWidth=4;" edge="1" parent="1" target="-h3G8m6RV8PxEqPPRe6U-6">
+        <mxCell id="-h3G8m6RV8PxEqPPRe6U-41" value="" style="endArrow=classic;html=1;rounded=0;curved=1;entryX=0.713;entryY=0.994;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=4;entryPerimeter=0;" edge="1" parent="1" target="-h3G8m6RV8PxEqPPRe6U-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="2730" y="1870" as="sourcePoint" />
+            <mxPoint x="2720" y="1870" as="sourcePoint" />
             <mxPoint x="2728.66" y="2120.3599999999997" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-h3G8m6RV8PxEqPPRe6U-42" value="" style="endArrow=classic;html=1;rounded=0;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#60a917;strokeColor=#33FF33;strokeWidth=4;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" target="-h3G8m6RV8PxEqPPRe6U-26" source="-h3G8m6RV8PxEqPPRe6U-6">
+        <mxCell id="-h3G8m6RV8PxEqPPRe6U-42" value="" style="endArrow=classic;html=1;rounded=0;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#60a917;strokeColor=#000000;strokeWidth=4;exitX=0.7;exitY=0.981;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="-h3G8m6RV8PxEqPPRe6U-26" source="-h3G8m6RV8PxEqPPRe6U-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="2730" y="2120" as="sourcePoint" />
             <mxPoint x="2860" y="2080" as="targetPoint" />
