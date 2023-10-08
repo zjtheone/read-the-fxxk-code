@@ -1,0 +1,108 @@
+Linux Kernel in CTF
+记录自己积累的、摘抄的、用到的Linux Kernel调试过程中遇到的一些有用的指令等资料。
+
+常见的内核函数：
+
+kmalloc()//，申请内存，类似于用户态的malloc()
+kfree()//：释放内存，类似于用户态的free()
+printk()//:输出函数，类似于用户态的printf()
+copy_to_user(void __user *to, const void *from, unsigned long n)  //将内核空间的数据拷贝用户空间
+copy_from_user(void *to, const void __user *from, unsigned long n) //将用户控件的数据拷贝到内核空间
+  
+commit_creds(prepare_kernel_cred(0)); //内核提权函数
+用于分析注册的函数的Fops结构体：
+
+struct file_operations {
+	struct module *owner;
+	loff_t (*llseek) (struct file *, loff_t, int);
+	ssize_t (*read) (struct file *, char __user *, size_t, loff_t *);
+	ssize_t (*write) (struct file *, const char __user *, size_t, loff_t *);
+	ssize_t (*read_iter) (struct kiocb *, struct iov_iter *);
+	ssize_t (*write_iter) (struct kiocb *, struct iov_iter *);
+	int (*iterate) (struct file *, struct dir_context *);
+	int (*iterate_shared) (struct file *, struct dir_context *);
+	unsigned int (*poll) (struct file *, struct poll_table_struct *);
+	long (*unlocked_ioctl) (struct file *, unsigned int, unsigned long);
+	long (*compat_ioctl) (struct file *, unsigned int, unsigned long);
+	int (*mmap) (struct file *, struct vm_area_struct *);
+	int (*open) (struct inode *, struct file *);
+	int (*flush) (struct file *, fl_owner_t id);
+	int (*release) (struct inode *, struct file *);
+	int (*fsync) (struct file *, loff_t, loff_t, int datasync);
+	int (*fasync) (int, struct file *, int);
+	int (*lock) (struct file *, int, struct file_lock *);
+	ssize_t (*sendpage) (struct file *, struct page *, int, size_t, loff_t *, int);
+	unsigned long (*get_unmapped_area)(struct file *, unsigned long, unsigned long, unsigned long, unsigned long);
+	int (*check_flags)(int);
+	int (*flock) (struct file *, int, struct file_lock *);
+	ssize_t (*splice_write)(struct pipe_inode_info *, struct file *, loff_t *, size_t, unsigned int);
+	ssize_t (*splice_read)(struct file *, loff_t *, struct pipe_inode_info *, size_t, unsigned int);
+	int (*setlease)(struct file *, long, struct file_lock **, void **);
+	long (*fallocate)(struct file *file, int mode, loff_t offset,
+			  loff_t len);
+	void (*show_fdinfo)(struct seq_file *m, struct file *f);
+#ifndef CONFIG_MMU
+	unsigned (*mmap_capabilities)(struct file *);
+#endif
+	ssize_t (*copy_file_range)(struct file *, loff_t, struct file *,
+			loff_t, size_t, unsigned int);
+	int (*clone_file_range)(struct file *, loff_t, struct file *, loff_t,
+			u64);
+	ssize_t (*dedupe_file_range)(struct file *, u64, u64, struct file *,
+			u64);
+};
+GDB加载符号表（如果给了的话）：
+
+# ko base addr
+cat /sys/module/{.ko}/sections/.text #cat /sys/module/core/sections/.text
+lsmod
+
+#符号表
+gdb ./vmlinux -q
+target remote localhost:1234
+pwndbg$ add-symbol-file ./core.ko 0xffffffffc0205000
+题目通常会给bzImage，如果没有vmlinux，可以使用extract-vmlinux提取，使用方法如下：
+
+$ ./extract-vmlinux ./bzImage > vmlinux
+藏在init文件里的限制信息读取的指令：
+
+kptr_restrict控制/proc/kallsyms是否显示symbols的地址，通常会在init文件中给出限制：
+
+echo 1 > /proc/sys/kernel/kptr_restrict
+dmesg_restrict限制非特权用户读取dmesg信息，无法访问内核打印的消息，通常会在init文件中给出限制：
+
+echo 1 > /proc/sys/kernel/dmesg_restrict
+查看函数地址：
+
+查看函数地址，在/proc/kallsyms中查看
+
+grep commit_creds /proc/kallsyms
+grep prepare_kernel_cred /proc/kallsyms
+grep mod_tree /proc/kallsyms
+grep modprobe_path /proc/kallsyms
+打包文件系统：
+
+#!/bin/sh
+find . | cpio -o --format=newc > ../rootfs.cpio
+# or
+find ./ -print0 | cpio --owner root --null -o --format=newc > ../myrootfs.cpio
+GCC编译shellcode
+
+gcc payload.S -o payload -nostdlib -Ttext=0 -m32 -N
+objdump -d -M intel payload
+
+# GCC编译多线程文件
+gcc -pthread
+# x64
+.intel_syntax noprefix
+xor rdi, rdi
+call prepare_kernel_cred
+mov  rdi, rax
+call commit_creds
+ret
+
+# x86
+xor %eax , %eax
+call prepare_kernel_cred
+call commit_creds
+ret
