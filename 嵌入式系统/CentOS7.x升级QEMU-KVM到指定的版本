@@ -1,0 +1,47 @@
+CentOS 7.x 升级 QEMU-KVM 到指定的版本 原创
+云物互联2021-07-14 16:45:26
+文章标签CentOS 7文章分类开源阅读数4213
+
+目录
+ 
+
+文章目录
+ 目录
+ 安装
+ 问题：seccomp support is disabled
+ 
+
+安装
+下载指定的版本。
+wget https://download.qemu.org/qemu-2.11.0.tar.xz
+1.
+安装编译依赖。
+yum -y install gcc gcc-c++ automake libtool zlib-devel glib2-devel bzip2-devel libuuid-devel spice-protocol spice-server-devel usbredir-devel libaio-devel 
+1.
+开始编译安装 QEMU-KVM。
+tar xvJf qemu-2.11.0.tar.xz
+cd qemu-2.11.0
+yum install -y libseccomp libseccomp-devel
+yum install -y numactl numactl-devel
+./configure --enable-seccomp --enable-numa --prefix=/usr/local/qemu.2.11 && make && make install
+1.
+2.
+3.
+4.
+5.
+替换 bin 文件。
+ln -s /usr/local/qemu.2.11/bin/qemu-system-x86_64 /usr/bin/qemu-kvm
+ln -s /usr/local/qemu.2.11/bin/qemu-system-x86_64 /usr/libexec/qemu-kvm
+ln -s /usr/local/qemu.2.11/bin/qemu-img /usr/bin/qemu-img
+1.
+2.
+3.
+检查。
+qemu-img --version
+qemu-kvm -version
+1.
+2.
+问题：seccomp support is disabled
+NOTE：编译需要使用选择 --enable-seccomp，否则会出现 qemu-system-x86_64: -sandbox on,obsolete=deny,elevateprivileges=deny,spawn=deny,resourcecontrol=deny: seccomp support is disabled 的问题。
+
+解决办法就是安装 libseccomp、libseccomp-devel，执行 ./congfigure 时添加 --enable-seccomp，然后清空 /var/cache/libvirt/qemu/capabilities 重启 libvirtd 即可。
