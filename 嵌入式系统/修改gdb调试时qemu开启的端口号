@@ -1,0 +1,72 @@
+修改gdb调试时qemu开启的端口号
+
+宇内虹游
+
+于 2021-04-01 14:53:01 发布
+
+1561
+ 收藏
+分类专栏： PHDcand2-2
+版权
+
+PHDcand2-2
+专栏收录该内容
+115 篇文章8 订阅
+订阅专栏
+创作时间：2019-03-10 01:47:41
+
+备注：之前操作系统学的，一直保存为博客草稿，想着后续能够整理一下，但是后面没时间了，现今都2021年4月1日了，所以还是直接发出来吧。
+
+解决方案可直接看第2节。
+
+1、主要参考资料
+太坑了，查了：
+qemu的所有参数 https://manpages.debian.org/jessie/qemu-system-x86/qemu-system-i386.1.en.html
+
+Remote Debugging using gdbserver https://gcc.gnu.org/onlinedocs/gcc-4.6.4/gnat_ugn_unw/Remote-Debugging-using-gdbserver.html
+关于gdbserver的
+
+gdbserver man https://sourceware.org/gdb/onlinedocs/gdb/gdbserver-man.html
+
+linux中查看网卡mac地址 https://blog.csdn.net/kunatnet/article/details/43408617
+
+qemu虚拟机与外部网络的通信 https://blog.csdn.net/u014022631/article/details/53411557
+
+QEMU/Options https://wiki.gentoo.org/wiki/QEMU/Options
+
+20.1 Connecting to a Remote Target https://sourceware.org/gdb/onlinedocs/gdb/Connecting.html
+
+Remote Configuration https://sourceware.org/gdb/onlinedocs/gdb/Remote-Configuration.html#Remote-Configuration
+
+Debugging with GDB https://sourceware.org/gdb/onlinedocs/gdb/index.html#SEC_Contents
+
+Using the gdbserver Program https://sourceware.org/gdb/onlinedocs/gdb/Server.html#TCP-port-allocation-lifecycle-of-gdbserver
+
+Setting up Qemu with a tap interface https://gist.github.com/extremecoders-re/e8fd8a67a515fee0c873dcafc81d811c
+
+Re: [Qemu-discuss] No IP in net interface when using socket netdev https://lists.gnu.org/archive/html/qemu-discuss/2018-01/msg00036.html
+
+QEMU’s new -nic command line option https://www.qemu.org/2018/05/31/nic-parameter/
+
+How to set up NAT for Qemu with TAP backend? (Windows 10) https://superuser.com/questions/1317652/how-to-set-up-nat-for-qemu-with-tap-backend-windows-10/1342126#1342126
+
+What is QEMU? https://www.qemu.org/
+
+Search results https://wiki.qemu.org/index.php?title=Special%3ASearch&profile=default&search=configuration+file&fulltext=Search
+
+Documentation/Networking https://wiki.qemu.org/Documentation/Networking
+
+2、解决方案
+最后怎么找到正确答案的呢？
+改变了思路，改变了关键字。
+
+既然我反复修改，每次
+
+
+
+Debugging a kernel in QEMU/libvirt https://access.redhat.com/blogs/766093/posts/2690881
+
+最大的感想是什么？
+————————————————
+版权声明：本文为CSDN博主「宇内虹游」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_39278265/article/details/88374245
