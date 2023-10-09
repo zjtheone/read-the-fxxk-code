@@ -1,0 +1,178 @@
+使用 GDB + Qemu 调试 Linux 内核
+2021年2月4日 | system |3079 阅读
+1. 概述
+在某些情况下，我们需要对于内核中的流程进行分析，虽然通过 BPF 的技术可以对于函数传入的参数和返回结果进行展示，但是在流程的调试上还是不如直接 GDB 单步调试来的直接。本文采用的编译方式如下，在一台 16 核 CentOS 7.7 的机器上进行内核源码相关的编译（主要是考虑编译效率），调试则是基于 VirtualBox 的 Ubuntu 20.04 系统中，采用 Qemu + GDB 进行单步调试，网上查看了很多文章，在最终进行单步跟踪的时候，始终不能够在断点处停止，进行过多次尝试和查询文档，最终发现需要在内核启动参数上添加 nokaslr ，本文是对整个搭建过程的总结。
+
+arch
+2. Linux 内核编译和文件系统制作
+2.1 Linux 内核编译
+编译内核和制作文件系统在 CentOS 7.7 的机器上。源码从国内清华的源下载：http://ftp.sjtu.edu.cn/sites/ftp.kernel.org/pub/linux/kernel/， 此处选择 linux-4.19.172.tar.gz 版本。详细编译步骤如下：
+
+ $ sudo yum group install "Development Tools"
+ $ yum install ncurses-devel bison flex elfutils-libelf-devel openssl-devel
+ 
+ $ wget http://ftp.sjtu.edu.cn/sites/ftp.kernel.org/pub/linux/kernel/v4.x/linux-4.19.172.tar.gz
+ $ tar xzvf linux-4.19.172.tar.gz
+ $ cd linux-4.19.172/
+ $ make menuconfig
+在内核编译选项中，开启如下 “Compile the kernel with debug info”， 4.19.172 中默认已经选中：
+
+Kernel hacking —> Compile-time checks and compiler options —> [ ] Compile the kernel with debug info
+
+kernel_compile_opt
+以上配置完成后会在当前目录生成 .config 文件，我们可以使用 grep 进行验证：
+
+# grep CONFIG_DEBUG_INFO .config
+CONFIG_DEBUG_INFO=y
+接着我们进行内核编译：
+
+ $ nproc       # 查看当前的系统核数
+ $ make -j 12  # 或者采用 make bzImage 进行编译， -j N，表示使用多少核并行编译
+ 
+ # 未压缩的内核文件，这个在 gdb 的时候需要加载，用于读取 symbol 符号信息，由于包含调试信息所以比较大
+ $ ls -hl vmlinux 
+-rwxr-xr-x 1 root root 449M Feb  3 14:46 vmlinux
+
+# 压缩后的镜像文件 
+$ ls -hl ./arch/x86_64/boot/bzImage
+lrwxrwxrwx 1 root root 22 Feb  3 14:47 ./arch/x86_64/boot/bzImage -> ../../x86/boot/bzImage
+
+$ ls -hl ./arch/x86/boot/bzImage
+-rw-r--r-- 1 root root 7.6M Feb  3 14:47 ./arch/x86/boot/bzImage
+不同发行版本下的内核的详细编译文档可以参考这里。
+
+2.2 启动内存文件系统制作
+# 首先安装静态依赖，否则会有报错，参见后续的排错章节
+$ yum install -y glibc-static.x86_64 -y
+
+$ wget https://busybox.net/downloads/busybox-1.32.1.tar.bz2
+$ tar -xvf busybox-1.32.1.tar.bz2
+$ cd busybox-1.32.1/
+
+$ make menuconfig
+-> Settings
+　--- Build Options
+　　[*] Build static binary (no shared libs) #进行静态编译 (CONFIG_STATIC)
+
+# 安装完成后生成的相关文件会在 _install 目录下
+$ make && make install   
+
+$ cd _install
+$ mkdir proc
+$ mkdir sys
+$ touch init  
+
+#  init 内容见后续章节，为内核启动的初始化程序
+$ vim init   
+
+# 必须设置成可执行文件
+$ chmod +x init  
+
+$ find . | cpio -o --format=newc > ./rootfs.img
+cpio: File ./rootfs.img grew, 2758144 new bytes not copied
+10777 blocks
+
+$ ls -hl rootfs.img
+-rw-r--r-- 1 root root 5.3M Feb  2 11:23 rootfs.img
+其中上述的 init 文件内容如下，打印启动日志和系统的整个启动过程花费的时间：
+
+#!/bin/sh
+echo "{==DBG==} INIT SCRIPT"
+mkdir /tmp
+mount -t proc none /proc
+mount -t sysfs none /sys
+mount -t debugfs none /sys/kernel/debug
+mount -t tmpfs none /tmp
+
+mdev -s 
+echo -e "{==DBG==} Boot took $(cut -d' ' -f1 /proc/uptime) seconds"
+
+# normal user
+setsid /bin/cttyhack setuidgid 1000 /bin/sh
+到此为止我们已经编译了好了 Linux 内核（vmlinux 和 bzImage）和启动的内存文件系统（rootfs.img）。
+
+2.3 错误排查
+在编译过程中出现以下报错：
+
+/bin/ld: cannot find -lcrypt
+/bin/ld: cannot find -lm
+/bin/ld: cannot find -lresolv
+/bin/ld: cannot find -lrt
+collect2: error: ld returned 1 exit status
+Note: if build needs additional libraries, put them in CONFIG_EXTRA_LDLIBS.
+Example: CONFIG_EXTRA_LDLIBS="pthread dl tirpc audit pam"
+出错的原因是因为我们采用静态编译依赖的底层库没有安装，如果不清楚这些库有哪些 rpm 安装包提供，则可以通过 yum provides 命令查看，然后安装相关依赖包重新编译即可。
+
+$ yum provides */libm.a
+// ...
+glibc-static-2.17-317.el7.x86_64 : C library static libraries for -static linking.
+Repo        : base
+Matched from:
+Filename    : /usr/lib64/libm.a
+3. Qemu 启动内核
+在上述步骤准备好以后，我们需要在调试的 Ubuntu 20.04 的系统中安装 Qemu 工具，其中调测的 Ubuntu 系统使用 VirtualBox 安装。
+
+$ apt install qemu qemu-utils qemu-kvm virt-manager libvirt-daemon-system libvirt-clients bridge-utils
+把上述编译好的 vmlinux、bzImage、rootfs.img 和编译的源码拷贝到我们当前 Unbuntu 机器中。
+
+拷贝 Linux 编译的源码主要是在 gdb 的调试过程中查看源码，其中 vmlinux 和 linux 源码处于相同的目录，本例中 vmlinux 位于 linux-4.19.172 源目录中。
+
+$ qemu-system-x86_64 -kernel ./bzImage -initrd  ./rootfs.img -append "nokaslr console=ttyS0" -s -S -nographic
+使用上述命令启动调试，启动后会停止在界面处，并等待远程 gdb 进行调试，在使用 GDB 调试之前，可以先使用以下命令进程测试内核启动是否正常。
+
+qemu-system-x86_64 -kernel ./bzImage -initrd  ./rootfs.img -append "nokaslr console=ttyS0" -nographic
+其中命令行中各参数如下：
+
+-kernel ./bzImage： 指定启用的内核镜像；
+-initrd ./rootfs.img：指定启动的内存文件系统；
+-append "nokaslr console=ttyS0" ： 附加参数，其中 nokaslr 参数必须添加进来，防止内核起始地址随机化，这样会导致 gdb 断点不能命中；参数说明可以参见这里。
+-s ：监听在 gdb 1234 端口；
+-S ：表示启动后就挂起，等待 gdb 连接；
+-nographic：不启动图形界面，调试信息输出到终端与参数 console=ttyS0 组合使用；
+qemu_debug
+4. GDB 调试
+在使用 qemu-system-x86_64 命令启动内核以后，进入到我们从编译机器上拷贝过来的 Linux 内核源代码目录中，在另外一个终端我们来启动 gdb 命令：
+
+[linux-4.19.172]$ gdb 
+(gdb) file vmlinux           # vmlinux 位于目录 linux-4.19.172 中
+(gdb) target remote :1234
+(gdb) break start_kernel     # 有些文档建议使用 hb 硬件断点，我在本地测试使用 break 也是 ok 的
+(gdb) c   									 # 启动调试，则内核会停止在 start_kernel 函数处
+整体运行界面如下：
+
+gdb_break_start_kernel
+5. Eclipse 图像化调试
+我们可以通过 eclipse-cdt 进行可视化项目调试。
+
+”File“ -> “New” -> “Project” ，然后选择 ”Makefile Project with Existing Code“ 选项，后续按照向导导入代码。
+
+eclipse_new_project
+在 “Run” -> “Debug Configurations” 选项中，创建一个 ”C/C++ Attach to Application“ 的调试选项。
+
+Project：选择我们刚才创建的项目名字；
+C/C++ Application： 选择编译 Linux 内核带符号信息表的 vmlinux；
+Build before launching：选择 ”Disable auto build“；
+Debugger：选择 gdbserver，具体设置如下图；
+在 Debugger 中的 Connection 信息中选择 ”TCP“，并填写端口为 ”1234“；
+启动 Debug 调试，即可看到与 gdb 类似的窗口。
+
+eclipse_debug
+启动 ”Debug“ 调试以后的窗口如下，在 Debug 窗口栏中，设置与 gdb 调试相同的步骤即可。
+
+eclipse_debug_run
+6. 参考
+How to compile and install Linux Kernel 5.6.9 from source code
+
+用qemu + gdb调试linux内核 ***
+
+QEMU+busybox 搭建Linux内核运行环境 ***
+
+QEMU+gdb调试Linux内核全过程 *
+
+linux内核编译与调试方法
+
+How to Build A Custom Linux Kernel For Qemu (2015 Edition)
+
+qemu与qemu-kvm到底什么区别
+
+在qemu环境中用gdb调试Linux内核 *
