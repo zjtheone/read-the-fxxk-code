@@ -1,0 +1,66 @@
+小技巧 - 提取linux内核实际编译的目标代码文件
+
+fanliyu
+
+于 2021-08-25 19:40:51 发布
+
+阅读量358
+ 收藏 2
+
+点赞数
+文章标签： linux kernel makefile
+版权
+        linux内核源码支持多种平台，且内置了大量的功能开关选项使能或禁用特定的模块，因此内核源码中会有大量的同名接口实现以及没有实际编译的模块代码。有时候我们想仅仅关注那些编译进vmlinux中的那些模块的.c源码，针对这些源码建立新的内核源码树，然后使用cscope之类的工具定位函数就会方便很多。那么如何删除没有使用到的.c文件呢？本文提供一种简易且准确的实现方法供大家参考。
+
+        思路很简单，考虑到内核的每个.c文件最终都会通过一条Makefile的语句进行编译，因此只要找到这条语句，稍加改造应该就可以实现我们想要的功能。经过简单研究，发现大量的编译动作都是通过调用scripts/Makefile.build完成的，在scripts/Makefile.build中找到下面这句：
+
+cmd_cc_o_c = $(CC) $(c_flags) -c -o $@ $<
+        可以看出这就是内核编译.c文件的地方，我们将其改写如下：
+
+cmd_cc_o_c = $(CC) $(c_flags) -c -o $@ $<; cp -a $< $(dir $@) 2>>/dev/null || true; cp -a $(wildcard $(dir $<)*.h) $(dir $@) 2>>/dev/null || true; cp -a $(join $(dir $<), include) $(dir $@) 2>>/dev/null || true
+
+
+cmd_cc_o_c = $(CC) $(c_flags) -c -o $@ $<; cp -a $< $(dir $@) 2>>/dev/null || true; cp -a $(wildcard $(dir $<)*.h) $(dir $@) 2>>/dev/null || true; cp -a $(join $(dir $<), include) $(dir $@) 2>>/dev/null || true
+
+        同样找到编译.S汇编代码的地方：cmd_as_o_S = $(CC) $(a_flags) -c -o $@ $<，将其改下如下：
+
+cmd_as_o_S = $(CC) $(a_flags) -c -o $@ $<; cp -a $< $(dir $@) 2>>/dev/null || true
+        这里涉及到一些Makefile内置函数的使用，$(CC) $(c_flags) -c -o $@ $<保持不变，仍然完成当前文件的编译工作；cp -a $< $(dir $@) 2>>/dev/null || true 这一句主要是将待编译的.c文件拷贝到目标文件所在的目录中；cp -a $(wildcard $(dir $<)*.h) $(dir $@) 2>>/dev/null || true 这一句是把当前.c文件所在目录下的所有.h文件拷贝到目标文件的生成目录中；cp -a $(join $(dir $<), include) $(dir $@) 2>>/dev/null || true 最后一句是将当前.c文件所在目录的include拷贝至目标文件的所在目录下。每一句附加的 || true 是保证当cp -a执行失败时，分号内语句的整体执行结果仍然为true，否则会导致编译出错并停止。
+
+        编译时使用O=指定输出目录：
+
+lyfan@LAPTOP:~/share/linux-xilinx-v2019.2/$ make ARCH=arm64 O=/home/lyfan/share/target_linux
+        输出的目标根目录target_linux的源码树层次目录也无需我们手动去构建，同样的还是scripts/Makefile.build中有以下语句：
+
+ifneq ($(KBUILD_SRC),)
+# Create directories for object files if they do not exist
+obj-dirs := $(sort $(obj) $(patsubst %/,%, $(dir $(targets))))
+# If cmd_files exist, their directories apparently exist.  Skip mkdir.
+exist-dirs := $(sort $(patsubst %/,%, $(dir $(cmd_files))))
+obj-dirs := $(strip $(filter-out $(exist-dirs), $(obj-dirs)))
+ifneq ($(obj-dirs),)
+$(shell mkdir -p $(obj-dirs))
+endif
+endif
+        可以看出没有定义KBUILD_SRC时（通常情况，当前所在目录即源码根目录），会判断目标文件的生成目录是否存在，如果不存在则使用mkdir -p预先创建。
+
+        最终编译完成后，所有编译进内核的.c及其所在目录的.h和include目录都会相应拷贝至输出根目录target_linux相应的层级目录中。我们还可以在此基础上将内核的联编系统Kconfig和Makefile拷贝过去，最后删掉.o/.a/.cmd/.order/.builtin等中间文件即可得到干净的内核源码树，删除中间文件可以采用简单的find/rm命令组合，也可以通过make clean完成：
+
+make ARCH=arm64 O=/home/lyfan/share/target_linux clean
+        注意make distclean会删掉自动生成的头文件，如include/generated/目录下的文件等，这不是我们想要的，因此采用make clean清空代码树的目标文件即可。
+
+        最后还需将编译命令中没有检测到的include目录，如arch/${ARCH}/include以及内核源码树根目录下的include等目录手动拷贝到输出的源码树相应层级目录下即可。
+
+附编译方法：
+
+        首先将.config拷贝到target_linux目录下，之后在内核源码目录执行：
+make  ARCH=arm64  O=/home/lyfan/share/target_linux  menuconfig
+
+配置好内核后，直接编译即可：
+
+make  ARCH=arm64  O=/home/lyfan/share/target_linux
+
+        最后我还查看了Linux从2.6.34到4.19.0，这里的定义都是不变的。因此这种方法适用于绝大多数的内核版本。需要注意的是编译时最好不要采用多线程的方式，还有个不足之处是没有判断待拷贝的.c/.h或include目录是否已经存在于目标目录中，每次编译都会执行一次cp -a，处理方法可以加上一个判断，如果文件不存在再去执行cp -a。
+————————————————
+版权声明：本文为CSDN博主「fanliyu」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/flyer0704090111/article/details/119909742
