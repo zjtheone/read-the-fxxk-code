@@ -1,0 +1,53 @@
+Running 64- and 32-bit RISC-V Linux on QEMU
+
+https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html
+
+This is a “hello world” example of booting Linux on RISC-V QEMU. This guide covers some basic steps to get Linux running on RISC-V. It is recomended that if you are interested in a specific distrubution you follow their steps. For example if you are interested in running Debian, they have instructions on their wiki https://wiki.debian.org/RISC-V. Most distrobutions (Debian, Fedora, OpenEmbedded, buildroot, OpenSUSE, FreeBSD and others) support RISC-V.
+
+Prerequisites
+Running Linux on QEMU RISC-V requires you to install some prerequisites. Find instructions for various Linux distributions as well as macOS below:
+
+sudo yum install autoconf automake libmpc-devel mpfr-devel gmp-devel gawk bison flex \
+                 texinfo patchutils gcc gcc-c++ zlib-devel expat-devel git
+Getting the sources
+First, create a working directory, where we’ll download and build all the sources.
+
+mkdir riscv64-linux
+cd riscv64-linux
+Then download all the required sources, which are:
+
+QEMU
+Linux
+Busybox
+git clone https://github.com/qemu/qemu
+git clone https://github.com/torvalds/linux
+git clone https://git.busybox.net/busybox
+You will also need to install a RISC-V toolchain. It is recomendded to install a toolchain from your distro. This can be done by using your distro’s installed (apt, dnf, pacman or something similar) and searching for riscv64 and installing gcc. If that doesn’t work you can use a prebuilt toolchain from: https://toolchains.bootlin.com.
+
+Build QEMU with the RISC-V target:
+
+cd qemu
+git checkout v5.0.0
+./configure --target-list=riscv64-softmmu
+make -j $(nproc)
+sudo make install
+Build Linux for the RISC-V target. First, checkout to a desired version:
+
+cd linux
+git checkout v5.4.0
+make ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- defconfig
+Then compile the kernel:
+
+make ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- -j $(nproc)
+Build Busybox:
+
+cd busybox
+CROSS_COMPILE=riscv{{bits}}-unknown-linux-gnu- make defconfig
+CROSS_COMPILE=riscv{{bits}}-unknown-linux-gnu- make -j $(nproc)
+Running
+Go back to your main working directory and run:
+
+sudo qemu-system-riscv64 -nographic -machine virt \
+     -kernel linux/arch/riscv/boot/Image -append "root=/dev/vda ro console=ttyS0" \
+     -drive file=busybox,format=raw,id=hd0 \
+     -device virtio-blk-device,drive=hd0
