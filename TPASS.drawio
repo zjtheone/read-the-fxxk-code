@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-22T10:31:15.538Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="x-_hMMJS_RzZNkFQuzPk" version="23.1.5" type="github" pages="20">
+<mxfile host="app.diagrams.net" modified="2024-02-22T10:57:44.620Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="dP0Iw3wOuV-Hbm7B4Elc" version="23.1.5" type="github" pages="20">
   <diagram id="KfRbmlJhNQrDs0zASMoi" name="TPaaS控制面概览图">
     <mxGraphModel dx="954" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8713,15 +8713,15 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Tmg0PH4VZdXlVq1RDz82" name="慢日志查询">
-    <mxGraphModel dx="127" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="-1152" dy="287" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="CZMLfM4y1xolEGOrxyS4-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="1582.5" y="930" width="257.5" height="390" as="geometry" />
+          <mxGeometry x="1780" y="930" width="257.5" height="390" as="geometry" />
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="1572.5" y="920" width="257.5" height="390" as="geometry" />
+          <mxGeometry x="1770" y="920" width="257.5" height="390" as="geometry" />
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-3" value="" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="1710" y="527" width="460" height="320" as="geometry" />
@@ -8783,7 +8783,7 @@
             <mxPoint x="1840" y="717" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CZMLfM4y1xolEGOrxyS4-21" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontStyle=1;fontSize=20;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-11" target="CZMLfM4y1xolEGOrxyS4-9">
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-21" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontStyle=1;fontSize=20;fillColor=#6a00ff;strokeColor=#3700CC;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-11" target="CZMLfM4y1xolEGOrxyS4-9">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1934.5" y="937" as="sourcePoint" />
             <mxPoint x="1984.5" y="887" as="targetPoint" />
@@ -8805,28 +8805,23 @@
           <mxGeometry x="1744.5" y="557" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-27" value="TPaaS-K8S" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="1571.5" y="933" width="145.5" height="20" as="geometry" />
+          <mxGeometry x="1769" y="933" width="145.5" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="CZMLfM4y1xolEGOrxyS4-33" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=20;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.417;exitY=0;exitDx=0;exitDy=0;fontStyle=1;exitPerimeter=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-2" target="CZMLfM4y1xolEGOrxyS4-11">
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-33" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=20;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#0000FF;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-2" target="CZMLfM4y1xolEGOrxyS4-11">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1680.9074999999998" y="915.4900000000002" as="sourcePoint" />
             <mxPoint x="1720" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CZMLfM4y1xolEGOrxyS4-34" value="helm" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontStyle=1" vertex="1" connectable="0" parent="CZMLfM4y1xolEGOrxyS4-33">
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-34" value="&lt;font color=&quot;#007fff&quot;&gt;helm&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontStyle=1" vertex="1" connectable="0" parent="CZMLfM4y1xolEGOrxyS4-33">
           <mxGeometry x="-0.3924" y="4" relative="1" as="geometry">
             <mxPoint x="3" y="-9" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CZMLfM4y1xolEGOrxyS4-35" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=20;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontStyle=1" edge="1" parent="1" target="CZMLfM4y1xolEGOrxyS4-11">
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-35" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=20;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontStyle=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#e51400;strokeColor=#B20000;" edge="1" parent="1" target="CZMLfM4y1xolEGOrxyS4-84" source="CZMLfM4y1xolEGOrxyS4-47">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1720" y="996.5" as="sourcePoint" />
             <mxPoint x="1720" y="690" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="CZMLfM4y1xolEGOrxyS4-36" value="API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontStyle=1" vertex="1" connectable="0" parent="CZMLfM4y1xolEGOrxyS4-35">
-          <mxGeometry x="-0.0165" y="-1" relative="1" as="geometry">
-            <mxPoint x="14" y="-34" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-43" value="ListDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontStyle=1;fontSize=20;" vertex="1" parent="1">
@@ -8839,63 +8834,63 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-45" value="" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="1610" y="995" width="155" height="120" as="geometry" />
+          <mxGeometry x="1807.5" y="995" width="192.5" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="CZMLfM4y1xolEGOrxyS4-46" value="PaaS&lt;br style=&quot;font-size: 20px;&quot;&gt;Operator" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="1621" y="1054" width="135" height="48" as="geometry" />
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-46" value="&lt;br style=&quot;font-size: 20px;&quot;&gt;Operator" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="1818.5" y="1054" width="161.5" height="46" as="geometry" />
         </mxCell>
-        <mxCell id="CZMLfM4y1xolEGOrxyS4-47" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Agent&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;strokeColor=#3333FF;fontSize=20;fillColor=#a20025;fontColor=#ffffff;dashed=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1620" y="1005" width="135" height="44" as="geometry" />
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-47" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Operator Agent&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;strokeColor=#3333FF;fontSize=20;fillColor=#a20025;fontColor=#ffffff;dashed=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1817.5" y="1005" width="172.5" height="44" as="geometry" />
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-48" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#330000;fontStyle=1;fontSize=20;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-49" target="CZMLfM4y1xolEGOrxyS4-45">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1687.5" y="1159" as="sourcePoint" />
-            <mxPoint x="1680" y="1120" as="targetPoint" />
+            <mxPoint x="1885" y="1159" as="sourcePoint" />
+            <mxPoint x="1877.5" y="1120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-49" value="MongoDB&lt;br style=&quot;font-size: 20px;&quot;&gt;P 实例" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
-          <mxGeometry x="1580" y="1171" width="120" height="49" as="geometry" />
+          <mxGeometry x="1777.5" y="1171" width="120" height="49" as="geometry" />
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-62" value="service" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="1644.5" y="1260" width="100" height="40" as="geometry" />
+          <mxGeometry x="1842" y="1260" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-63" value="LB" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="1654" y="1330" width="80" height="40" as="geometry" />
+          <mxGeometry x="1851.5" y="1330" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-64" value="" style="endArrow=classic;html=1;strokeColor=#3333FF;fontStyle=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;fontSize=20;" edge="1" parent="1" target="CZMLfM4y1xolEGOrxyS4-63">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1694" y="1390" as="sourcePoint" />
-            <mxPoint x="1693.17" y="1441" as="targetPoint" />
+            <mxPoint x="1891.5" y="1390" as="sourcePoint" />
+            <mxPoint x="1890.67" y="1441" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-65" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#3333FF;fontStyle=1;strokeWidth=2;fontSize=20;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-63" target="CZMLfM4y1xolEGOrxyS4-62">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="2266.5" y="1160" as="sourcePoint" />
-            <mxPoint x="2316.5" y="1110" as="targetPoint" />
+            <mxPoint x="2464" y="1160" as="sourcePoint" />
+            <mxPoint x="2514" y="1110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-66" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#3333FF;fontStyle=1;strokeWidth=2;fontSize=20;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-62" target="CZMLfM4y1xolEGOrxyS4-49">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1693.5" y="1250" as="sourcePoint" />
-            <mxPoint x="1693.6599999999999" y="1230" as="targetPoint" />
+            <mxPoint x="1891" y="1250" as="sourcePoint" />
+            <mxPoint x="1891.1599999999999" y="1230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-70" value="MongoDB&lt;br style=&quot;font-size: 20px;&quot;&gt;S实例" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
-          <mxGeometry x="1729.5" y="1171" width="90" height="50" as="geometry" />
+          <mxGeometry x="1910" y="1171" width="113" height="50" as="geometry" />
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-71" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#330000;fontStyle=1;fontSize=20;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-45" target="CZMLfM4y1xolEGOrxyS4-70">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1690" y="1120" as="sourcePoint" />
-            <mxPoint x="1697.5" y="1125" as="targetPoint" />
+            <mxPoint x="1887.5" y="1120" as="sourcePoint" />
+            <mxPoint x="1895" y="1125" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-72" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.918;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeColor=#CC0000;fontSize=20;strokeWidth=2;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-49" target="CZMLfM4y1xolEGOrxyS4-70">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1840" y="1240" as="sourcePoint" />
-            <mxPoint x="1890" y="1190" as="targetPoint" />
+            <mxPoint x="2037.5" y="1240" as="sourcePoint" />
+            <mxPoint x="2087.5" y="1190" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1700" y="1230" />
-              <mxPoint x="1710" y="1230" />
+              <mxPoint x="1897.5" y="1230" />
+              <mxPoint x="1907.5" y="1230" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -8904,18 +8899,243 @@
             <mxPoint x="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CZMLfM4y1xolEGOrxyS4-80" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=20;fontColor=#CC0000;strokeColor=#FF0000;strokeWidth=2;" edge="1" parent="1">
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-80" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=20;fontColor=#CC0000;strokeColor=#FF0000;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-9" target="CZMLfM4y1xolEGOrxyS4-45">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1830" y="742" as="sourcePoint" />
             <mxPoint x="1680" y="1012" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1640" y="772" />
+              <mxPoint x="1950" y="930" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="CZMLfM4y1xolEGOrxyS4-81" value="&lt;b&gt;API&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontColor=#CC0000;" vertex="1" connectable="0" parent="CZMLfM4y1xolEGOrxyS4-80">
           <mxGeometry x="0.1704" y="39" relative="1" as="geometry">
+            <mxPoint x="-42" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-84" value="TPaaS&lt;br style=&quot;font-size: 20px;&quot;&gt;Proxy" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1840" y="787" width="104.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-85" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontStyle=1;fontSize=20;fillColor=#e51400;strokeColor=#B20000;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-84" target="CZMLfM4y1xolEGOrxyS4-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1792" y="797" as="sourcePoint" />
+            <mxPoint x="1897" y="752" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-86" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;慢查开关&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2250" y="524" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-87" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;openapi&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2250" y="637" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-88" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;tpaas api&lt;br&gt;operateRelease&lt;br&gt;修改标签&lt;br&gt;开启关闭profile&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2220" y="737" width="180" height="103" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-89" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;实例CR上的标签&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2220" y="945" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-92" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-86" target="CZMLfM4y1xolEGOrxyS4-87">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2160" y="740" as="sourcePoint" />
+            <mxPoint x="2210" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-93" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-87" target="CZMLfM4y1xolEGOrxyS4-88">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2320" y="594" as="sourcePoint" />
+            <mxPoint x="2320" y="647" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-94" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#6a00ff;strokeColor=#3700CC;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2310" y="840" as="sourcePoint" />
+            <mxPoint x="2310" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-102" value="轮询所有实例CR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2220" y="1221" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-104" value="CR上是否有profile开关变更" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2260" y="1300" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-105" value="profile是否符合预期" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2270" y="1497" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-107">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2400" y="1260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2310" y="1677" />
+              <mxPoint x="2420" y="1677" />
+              <mxPoint x="2420" y="1260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-107" value="修改库上的profile设置；" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2220" y="1607" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-109" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-102" target="CZMLfM4y1xolEGOrxyS4-104">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2190" y="1407" as="sourcePoint" />
+            <mxPoint x="2240" y="1357" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-110" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-103">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2309.44" y="1387" as="sourcePoint" />
+            <mxPoint x="2309.44" y="1423" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-111" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-104" target="CZMLfM4y1xolEGOrxyS4-103">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2309.44" y="1387" as="sourcePoint" />
+            <mxPoint x="2309.44" y="1423" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-119" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CZMLfM4y1xolEGOrxyS4-111">
+          <mxGeometry x="-0.1563" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-103" value="轮询实例的所有副本上的Primary/Seconday副本的所有库" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2220" y="1417" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-112" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2309.44" y="1467" as="sourcePoint" />
+            <mxPoint x="2310" y="1497" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-113" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2309.44" y="1577" as="sourcePoint" />
+            <mxPoint x="2310" y="1607" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-120" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CZMLfM4y1xolEGOrxyS4-113">
+          <mxGeometry x="-0.4518" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-115" value="协程1" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2278.75" y="1120" width="62.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-116" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2309.44" y="1182" as="sourcePoint" />
+            <mxPoint x="2309.44" y="1218" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-122" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-105">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2340" y="1510" as="sourcePoint" />
+            <mxPoint x="2420" y="1537" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-125" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CZMLfM4y1xolEGOrxyS4-122">
+          <mxGeometry x="-0.6404" y="-1" relative="1" as="geometry">
+            <mxPoint x="18" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-123" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-104">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2340" y="1180" as="sourcePoint" />
+            <mxPoint x="2420" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-124" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CZMLfM4y1xolEGOrxyS4-123">
+          <mxGeometry x="0.0747" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-126" value="轮询所有实例CR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2470" y="1221" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-127" value="CR上是否有profile开关开启" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2510" y="1300" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-128" target="CZMLfM4y1xolEGOrxyS4-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-128" value="profile是否符合预期" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2520" y="1497" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-147" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-130" target="CZMLfM4y1xolEGOrxyS4-128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-130" value="修改库上的profile设置；" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2470" y="1607" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-131" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-126" target="CZMLfM4y1xolEGOrxyS4-127">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2440" y="1407" as="sourcePoint" />
+            <mxPoint x="2490" y="1357" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-132" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-135">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2559.44" y="1387" as="sourcePoint" />
+            <mxPoint x="2559.44" y="1423" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-133" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-127" target="CZMLfM4y1xolEGOrxyS4-135">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2559.44" y="1387" as="sourcePoint" />
+            <mxPoint x="2559.44" y="1423" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-134" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CZMLfM4y1xolEGOrxyS4-133">
+          <mxGeometry x="-0.1563" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-135" value="轮询实例的所有副本上的Primary/Seconday副本的所有库" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2470" y="1417" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-136" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2559.44" y="1467" as="sourcePoint" />
+            <mxPoint x="2560" y="1497" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-137" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2559.44" y="1577" as="sourcePoint" />
+            <mxPoint x="2560" y="1607" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-138" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CZMLfM4y1xolEGOrxyS4-137">
+          <mxGeometry x="-0.4518" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-139" value="协程2" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2528.75" y="1120" width="62.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-140" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2559.44" y="1182" as="sourcePoint" />
+            <mxPoint x="2559.44" y="1218" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-143" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZMLfM4y1xolEGOrxyS4-127">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2590" y="1180" as="sourcePoint" />
+            <mxPoint x="2670" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-144" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CZMLfM4y1xolEGOrxyS4-143">
+          <mxGeometry x="0.0747" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-145" value="获取profile表慢日志信息，落文件；" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2460" y="1690" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CZMLfM4y1xolEGOrxyS4-148" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2559.74" y="1661" as="sourcePoint" />
+            <mxPoint x="2559.74" y="1690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
