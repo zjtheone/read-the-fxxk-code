@@ -208,7 +208,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="wZBd-qf4yTazctqztQTD" name="StarDB审计架构">
-    <mxGraphModel dx="2908" dy="1439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2512" dy="1165" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -478,10 +478,10 @@
           <mxGeometry x="37" y="698" width="188" height="154" as="geometry" />
         </mxCell>
         <mxCell id="I7l47Y7xmR0Tcc_eaNZg-117" value="&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;&lt;b&gt;_vt.audit_logs&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-40" y="1070" width="60" height="30" as="geometry" />
+          <mxGeometry x="-66" y="1060" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="I7l47Y7xmR0Tcc_eaNZg-118" value="&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;&lt;b&gt;_vt.audit_logs&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="114" y="1070" width="60" height="30" as="geometry" />
+          <mxGeometry x="90" y="1060" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="I7l47Y7xmR0Tcc_eaNZg-120" value="runtime" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fillColor=none;strokeColor=#d6b656;strokeWidth=0;" vertex="1" parent="1">
           <mxGeometry x="570" y="555" width="60" height="30" as="geometry" />
