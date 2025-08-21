@@ -616,40 +616,40 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="gxgkSny6sDPrNR_HpamH-1" value="分布式存储层" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="gxgkSny6sDPrNR_HpamH-1" value="分布式存储层" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="20" y="533" width="627" height="176" as="geometry" />
         </mxCell>
-        <mxCell id="gxgkSny6sDPrNR_HpamH-2" value="StarDB Proxy Gateway" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="gxgkSny6sDPrNR_HpamH-2" value="StarDB Proxy Gateway" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="26" y="227" width="635" height="176" as="geometry" />
         </mxCell>
-        <mxCell id="gxgkSny6sDPrNR_HpamH-3" value="应用程序层" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="gxgkSny6sDPrNR_HpamH-3" value="应用程序层" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="256.5" y="70" width="140" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="gxgkSny6sDPrNR_HpamH-5" value="SQL解析模块&#xa;• AST解析&#xa;• DML识别&#xa;• 表信息提取" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="gxgkSny6sDPrNR_HpamH-5" value="SQL解析模块&#xa;• AST解析&#xa;• DML识别&#xa;• 表信息提取" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="61" y="252" width="153" height="126" as="geometry" />
         </mxCell>
-        <mxCell id="gxgkSny6sDPrNR_HpamH-6" value="水印处理模块&#xa;• 水印注入&#xa;• 完整性验证&#xa;• 自动DDL" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="gxgkSny6sDPrNR_HpamH-6" value="水印处理模块&#xa;• 水印注入&#xa;• 完整性验证&#xa;• 自动DDL" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="264" y="252" width="156" height="126" as="geometry" />
         </mxCell>
-        <mxCell id="gxgkSny6sDPrNR_HpamH-7" value="审计事件模块&#xa;• 规则匹配&#xa;• 事件记录&#xa;• 异步写入" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="gxgkSny6sDPrNR_HpamH-7" value="审计事件模块&#xa;• 规则匹配&#xa;• 事件记录&#xa;• 异步写入" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="470" y="252" width="156" height="126" as="geometry" />
         </mxCell>
-        <mxCell id="gxgkSny6sDPrNR_HpamH-8" value="StarDB 集群&#xa;• 分片存储&#xa;• 触发器验证&#xa;• 实时检测" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="gxgkSny6sDPrNR_HpamH-8" value="StarDB 集群&#xa;• 分片存储&#xa;• 触发器验证&#xa;• 实时检测" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="55" y="558" width="153" height="126" as="geometry" />
         </mxCell>
-        <mxCell id="gxgkSny6sDPrNR_HpamH-9" value="CDC处理&#xa;• VStream&#xa;• 事件捕获&#xa;• 批量同步" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="gxgkSny6sDPrNR_HpamH-9" value="CDC处理&#xa;• VStream&#xa;• 事件捕获&#xa;• 批量同步" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="258" y="558" width="137" height="126" as="geometry" />
         </mxCell>
-        <mxCell id="gxgkSny6sDPrNR_HpamH-10" value="防篡改存储&#xa;• Dolt版本控制&#xa;• ImmuDB审计&#xa;• 历史恢复" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="gxgkSny6sDPrNR_HpamH-10" value="防篡改存储&#xa;• Dolt版本控制&#xa;• ImmuDB审计&#xa;• 历史恢复" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="445" y="558" width="167" height="126" as="geometry" />
         </mxCell>
-        <mxCell id="gxgkSny6sDPrNR_HpamH-12" value="SQL请求" style="curved=1;startArrow=none;endArrow=block;exitX=0.454;exitY=0.956;entryX=0.462;entryY=-0.014;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="gxgkSny6sDPrNR_HpamH-3" target="gxgkSny6sDPrNR_HpamH-2">
+        <mxCell id="gxgkSny6sDPrNR_HpamH-12" value="SQL请求" style="curved=1;startArrow=none;endArrow=block;exitX=0.454;exitY=0.956;entryX=0.462;entryY=-0.014;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=20;fontStyle=1" edge="1" parent="1" source="gxgkSny6sDPrNR_HpamH-3" target="gxgkSny6sDPrNR_HpamH-2">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
             <mxPoint x="326" y="147" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="gxgkSny6sDPrNR_HpamH-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.463;exitY=0.985;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="gxgkSny6sDPrNR_HpamH-2">
+        <mxCell id="gxgkSny6sDPrNR_HpamH-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.463;exitY=0.985;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=20;fontStyle=1" edge="1" parent="1" source="gxgkSny6sDPrNR_HpamH-2">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="410" y="510" as="sourcePoint" />
             <mxPoint x="320" y="530" as="targetPoint" />
