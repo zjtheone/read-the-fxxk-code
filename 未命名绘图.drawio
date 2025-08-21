@@ -1,9 +1,165 @@
-<mxfile host="app.diagrams.net" modified="2023-04-12T02:31:12.917Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" version="21.1.4" etag="uDRzy3q9Hj1HYqmUUWHd" type="github">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.1.0">
   <diagram name="第 1 页" id="nHUxEQPVu50Cdaj4F56L">
-    <mxGraphModel>
+    <mxGraphModel dx="1678" dy="1191" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-79" value="防篡改同步服务" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontSize=24;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="882" y="20" width="1428" height="618" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-80" value="HTTP API Server&#xa;端口:8080" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="907" y="343" width="175" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-81" value="任务管理器&#xa;TaskManager" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1082" y="490" width="150" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-82" value="检查点管理器&#xa;CheckpointManager" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="507" width="200" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-83" value="全量同步管理器&#xa;FullSyncManager" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="370" width="179" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-84" value="VStream客户端&#xa;CDC事件接收" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1654" y="370" width="168" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-85" value="事件缓存&#xa;批处理缓冲区" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="149" width="156" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-86" value="同步任务&#xa;独立任务实例" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="254" width="156" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-87" value="Dolt客户端&#xa;版本控制数据库" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="2010" y="60" width="172" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-88" value="ImmuDB客户端&#xa;不可变审计数据库" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="2010" y="254" width="188" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-89" value="客户端/用户" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="355" width="148" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-90" value="StarDB数据库集群" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="2380" y="380" width="143" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-91" value="Dolt数据库&#xa;Git-like版本控制" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="2390" y="48" width="133" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-92" value="ImmuDB&#xa;不可变审计数据库" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="2380" y="240" width="143" height="103" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-93" value="检查点文件&#xa;./checkpoints/*.checkpoint" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="650" width="258" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-94" value="配置文件&#xa;config.json" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1232" y="650" width="139" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-95" value="HTTP请求" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-89" target="V71f4DIRbk5kZ5lmE4LE-80">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-96" value="任务管理" style="startArrow=none;endArrow=block;exitX=0.74;exitY=1;entryX=0;entryY=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-80" target="V71f4DIRbk5kZ5lmE4LE-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-97" value="审计查询" style="startArrow=none;endArrow=block;exitX=0.65;exitY=0;entryX=0.27;entryY=0;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-80" target="V71f4DIRbk5kZ5lmE4LE-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-98" value="创建/管理" style="startArrow=none;endArrow=block;exitX=0.66;exitY=0;entryX=0;entryY=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-81" target="V71f4DIRbk5kZ5lmE4LE-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-99" value="使用" style="startArrow=none;endArrow=block;exitX=1;exitY=0.55;entryX=0;entryY=0.23;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-81" target="V71f4DIRbk5kZ5lmE4LE-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-100" value="全量同步" style="startArrow=none;endArrow=block;exitX=0.96;exitY=0;entryX=0;entryY=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-81" target="V71f4DIRbk5kZ5lmE4LE-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-101" value="启动VStream" style="startArrow=none;endArrow=block;exitX=1;exitY=0.89;entryX=0;entryY=0.1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-86" target="V71f4DIRbk5kZ5lmE4LE-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-102" value="缓存事件" style="startArrow=none;endArrow=block;exitX=0.98;exitY=0;entryX=0;entryY=0.4;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-86" target="V71f4DIRbk5kZ5lmE4LE-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-103" value="处理到Dolt" style="startArrow=none;endArrow=block;exitX=0.67;exitY=0;entryX=0;entryY=0.07;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-86" target="V71f4DIRbk5kZ5lmE4LE-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-104" value="处理到ImmuDB" style="startArrow=none;endArrow=block;exitX=1;exitY=0.57;entryX=0;entryY=0.59;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-86" target="V71f4DIRbk5kZ5lmE4LE-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-105" value="保存进度" style="startArrow=none;endArrow=block;exitX=0.65;exitY=1;entryX=0;entryY=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-86" target="V71f4DIRbk5kZ5lmE4LE-82">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1530" y="332" />
+              <mxPoint x="1530" y="546" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-106" value="gRPC连接&#xa;读取binlog" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.41;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-84" target="V71f4DIRbk5kZ5lmE4LE-90">
+          <mxGeometry x="0.0556" y="19" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1822" y="400" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-107" value="查询表结构" style="startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.63;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-83" target="V71f4DIRbk5kZ5lmE4LE-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-108" value="批量数据" style="startArrow=none;endArrow=block;exitX=0.6;exitY=0;entryX=0;entryY=0.38;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-83" target="V71f4DIRbk5kZ5lmE4LE-87">
+          <mxGeometry x="-0.161" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-109" value="初始VGTID" style="startArrow=none;endArrow=block;exitX=0.71;exitY=1;entryX=0;entryY=0.82;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-83" target="V71f4DIRbk5kZ5lmE4LE-82">
+          <mxGeometry x="0.2259" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1380" y="448" />
+              <mxPoint x="1380" y="571" />
+            </Array>
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-110" value="批量刷新" style="startArrow=none;endArrow=block;exitX=0.95;exitY=0;entryX=0;entryY=0.61;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-85" target="V71f4DIRbk5kZ5lmE4LE-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-111" value="审计事件" style="startArrow=none;endArrow=block;exitX=1;exitY=0.75;entryX=0.75;entryY=0;rounded=0;edgeStyle=orthogonalEdgeStyle;exitDx=0;exitDy=0;entryDx=0;entryDy=0;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-85" target="V71f4DIRbk5kZ5lmE4LE-88">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2151" y="208" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-112" value="写入数据&#xa;Git提交" style="startArrow=none;endArrow=block;exitX=1;exitY=0.49;entryX=0;entryY=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-87" target="V71f4DIRbk5kZ5lmE4LE-91">
+          <mxGeometry x="0.7708" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-113" value="审计记录&#xa;不可变存储" style="startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;fontSize=16;fontStyle=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-88" target="V71f4DIRbk5kZ5lmE4LE-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-114" value="读写" style="startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0.39;entryY=0;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-82" target="V71f4DIRbk5kZ5lmE4LE-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-115" value="加载" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.92;entryX=0.18;entryY=0;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-81" target="V71f4DIRbk5kZ5lmE4LE-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-116" value="CDC事件流" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;entryX=1;entryY=0.91;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;exitX=-0.004;exitY=0.473;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-90" target="V71f4DIRbk5kZ5lmE4LE-84">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2384" y="431" />
+            </Array>
+            <mxPoint x="2390" y="431" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V71f4DIRbk5kZ5lmE4LE-117" value="实时事件" style="startArrow=none;endArrow=block;entryX=0;entryY=0.58;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=16;fontStyle=1;exitX=0.448;exitY=-0.002;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="V71f4DIRbk5kZ5lmE4LE-84" target="V71f4DIRbk5kZ5lmE4LE-85">
+          <mxGeometry x="-0.7414" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1729" y="360" />
+              <mxPoint x="1730" y="360" />
+              <mxPoint x="1730" y="194" />
+            </Array>
+            <mxPoint x="1730" y="360" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
