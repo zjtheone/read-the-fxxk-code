@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.1.0" pages="4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.1.0" pages="5">
   <diagram name="starflow-arch-demo" id="nHUxEQPVu50Cdaj4F56L">
     <mxGraphModel dx="1797" dy="1063" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -364,6 +364,100 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="298.0899999999999" y="322" as="sourcePoint" />
             <mxPoint x="299" y="372" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="zOxkTO-0dIX-nSIsC4at" name="防篡改系统-v1">
+    <mxGraphModel dx="1738" dy="1144" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-1" value="应用程序" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="150" height="684" as="geometry" />
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-2" value="StarDB Proxy" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="220" y="20" width="150" height="684" as="geometry" />
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-3" value="水印模块" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="466" y="20" width="150" height="684" as="geometry" />
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-4" value="审计模块" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="666" y="20" width="150" height="684" as="geometry" />
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-5" value="CDC捕获" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="866" y="20" width="150" height="684" as="geometry" />
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-6" value="Dolt存储" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="20" width="150" height="684" as="geometry" />
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-7" value="ImmuDB存储" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="20" width="150" height="684" as="geometry" />
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-8" value="SQL请求" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=18;" edge="1" parent="1" source="7ap5kpN3KZof8RSV-zbG-1" target="7ap5kpN3KZof8RSV-zbG-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="204" y="131" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-9" value="解析SQL并检查水印配置" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=18;" edge="1" parent="1" source="7ap5kpN3KZof8RSV-zbG-2" target="7ap5kpN3KZof8RSV-zbG-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="427" y="187" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-10" value="注入水印信息和哈希值" style="curved=1;endArrow=block;rounded=0;fontSize=18;" edge="1" parent="1" source="7ap5kpN3KZof8RSV-zbG-3" target="7ap5kpN3KZof8RSV-zbG-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="592" y="235" />
+              <mxPoint x="592" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-11" value="记录审计事件" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=18;" edge="1" parent="1" source="7ap5kpN3KZof8RSV-zbG-2" target="7ap5kpN3KZof8RSV-zbG-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="527" y="313" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-12" value="执行SQL操作" style="curved=1;endArrow=block;rounded=0;fontSize=18;" edge="1" parent="1" source="7ap5kpN3KZof8RSV-zbG-2" target="7ap5kpN3KZof8RSV-zbG-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="346" y="369" />
+              <mxPoint x="346" y="399" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-13" value="触发CDC事件" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=18;" edge="1" parent="1" source="7ap5kpN3KZof8RSV-zbG-2" target="7ap5kpN3KZof8RSV-zbG-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="627" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-14" value="版本化存储数据变更" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=18;" edge="1" parent="1" source="7ap5kpN3KZof8RSV-zbG-5" target="7ap5kpN3KZof8RSV-zbG-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1057" y="503" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-15" value="不可变存储审计记录" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=18;" edge="1" parent="1" source="7ap5kpN3KZof8RSV-zbG-5" target="7ap5kpN3KZof8RSV-zbG-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1157" y="551" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7ap5kpN3KZof8RSV-zbG-16" value="返回执行结果" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=18;" edge="1" parent="1" source="7ap5kpN3KZof8RSV-zbG-2" target="7ap5kpN3KZof8RSV-zbG-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="207" y="599" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
