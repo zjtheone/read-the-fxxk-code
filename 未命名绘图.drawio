@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.1.1" pages="12">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.1" pages="14">
   <diagram name="starflow-arch-demo" id="nHUxEQPVu50Cdaj4F56L">
     <mxGraphModel dx="1797" dy="1063" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1453,6 +1453,140 @@
             <Array as="points">
               <mxPoint x="510" y="870" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wDzQyTTUfJYrf-U7txa7" name="非关联子查询事件流">
+    <mxGraphModel dx="1314" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HzXILNrJSfxhhts43BvK-1" value="SQL Parser" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="150" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="HzXILNrJSfxhhts43BvK-2" value="Plan Builder" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="260" y="20" width="150" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="HzXILNrJSfxhhts43BvK-3" value="Subquery Detector" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="543" y="20" width="159" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="HzXILNrJSfxhhts43BvK-4" value="Subquery Handler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="752" y="20" width="152" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="HzXILNrJSfxhhts43BvK-5" value="Query Executor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="954" y="20" width="150" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="HzXILNrJSfxhhts43BvK-6" value="DELETE with subquery" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;strokeWidth=2;fontSize=16;" edge="1" parent="1" source="HzXILNrJSfxhhts43BvK-1" target="HzXILNrJSfxhhts43BvK-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="224" y="131" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzXILNrJSfxhhts43BvK-7" value="CheckIfDeleteWithSubquery()" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;strokeWidth=2;fontSize=16;" edge="1" parent="1" source="HzXILNrJSfxhhts43BvK-2" target="HzXILNrJSfxhhts43BvK-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="487" y="179" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzXILNrJSfxhhts43BvK-8" value="true (contains subquery)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;strokeWidth=2;fontSize=16;" edge="1" parent="1" source="HzXILNrJSfxhhts43BvK-3" target="HzXILNrJSfxhhts43BvK-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="235" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzXILNrJSfxhhts43BvK-9" value="createDeleteOperator_new()" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;strokeWidth=2;fontSize=16;" edge="1" parent="1" source="HzXILNrJSfxhhts43BvK-2" target="HzXILNrJSfxhhts43BvK-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="291" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzXILNrJSfxhhts43BvK-10" value="pullOutValueSubqueries()" style="curved=1;endArrow=block;rounded=0;strokeWidth=2;fontSize=16;" edge="1" parent="1" source="HzXILNrJSfxhhts43BvK-4" target="HzXILNrJSfxhhts43BvK-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="879" y="347" />
+              <mxPoint x="879" y="377" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzXILNrJSfxhhts43BvK-11" value="updateRouting()" style="curved=1;endArrow=block;rounded=0;strokeWidth=2;fontSize=16;" edge="1" parent="1" source="HzXILNrJSfxhhts43BvK-4" target="HzXILNrJSfxhhts43BvK-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="879" y="433" />
+              <mxPoint x="879" y="463" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzXILNrJSfxhhts43BvK-12" value="SubQueryContainer" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;strokeWidth=2;fontSize=16;" edge="1" parent="1" source="HzXILNrJSfxhhts43BvK-4" target="HzXILNrJSfxhhts43BvK-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="593" y="519" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzXILNrJSfxhhts43BvK-13" value="Execution Plan" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;strokeWidth=2;fontSize=16;" edge="1" parent="1" source="HzXILNrJSfxhhts43BvK-2" target="HzXILNrJSfxhhts43BvK-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="fDlsCyea1FAAGriZNzpr" name="第 14 页">
+    <mxGraphModel dx="1314" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6aSyC7-AxorfI_vaj7MN-1" value="Query Parser" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="108" y="20" width="151" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6aSyC7-AxorfI_vaj7MN-2" value="Plan Builder" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="147" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6aSyC7-AxorfI_vaj7MN-3" value="Executor" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="600" y="20" width="123" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6aSyC7-AxorfI_vaj7MN-4" value="Subquery Handler" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="329" y="140" width="187" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6aSyC7-AxorfI_vaj7MN-5" value="Value Pullout" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="240" y="244" width="154" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6aSyC7-AxorfI_vaj7MN-6" value="Route Planning" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="444" y="244" width="167" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6aSyC7-AxorfI_vaj7MN-7" value="" style="startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;fontSize=16;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="6aSyC7-AxorfI_vaj7MN-1" target="6aSyC7-AxorfI_vaj7MN-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6aSyC7-AxorfI_vaj7MN-8" value="" style="startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;fontSize=16;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6aSyC7-AxorfI_vaj7MN-2" target="6aSyC7-AxorfI_vaj7MN-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6aSyC7-AxorfI_vaj7MN-9" value="" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=16;exitDx=0;exitDy=0;" edge="1" parent="1" source="6aSyC7-AxorfI_vaj7MN-2" target="6aSyC7-AxorfI_vaj7MN-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6aSyC7-AxorfI_vaj7MN-10" value="" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=16;edgeStyle=orthogonalEdgeStyle;exitDx=0;exitDy=0;" edge="1" parent="1" source="6aSyC7-AxorfI_vaj7MN-4" target="6aSyC7-AxorfI_vaj7MN-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="422" y="219" />
+              <mxPoint x="317" y="219" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6aSyC7-AxorfI_vaj7MN-11" value="" style="startArrow=none;endArrow=block;entryX=0.5;entryY=0;rounded=0;fontSize=16;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" target="6aSyC7-AxorfI_vaj7MN-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="423" y="194" />
+              <mxPoint x="423" y="219" />
+              <mxPoint x="528" y="219" />
+            </Array>
+            <mxPoint x="423" y="200" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
       </root>
