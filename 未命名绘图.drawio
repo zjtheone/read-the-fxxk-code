@@ -2729,6 +2729,15 @@
         <mxCell id="uHrDkx_8PsJidX21mmsk-23" value="Local Mysql" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="717" y="70" width="232" height="78" as="geometry" />
         </mxCell>
+        <mxCell id="uHrDkx_8PsJidX21mmsk-27" value="172.16.1.7" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="840" y="248" width="140" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="uHrDkx_8PsJidX21mmsk-28" value="172.16.1.3" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="840" y="327" width="140" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="uHrDkx_8PsJidX21mmsk-29" value="172.16.1.41" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="840" y="410" width="140" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
